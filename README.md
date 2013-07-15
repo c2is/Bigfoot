@@ -37,4 +37,4 @@ Feel free to change the authentication configuration in app/Resources/config/sec
 
 You should craete a new admin user and delete the one loaded with the BigfootUserBundle fixtures if your application is accessible from the outside.
 
-You can comment the content of the app/Resources/config/security.yml file to disabled the authentication on the application.
+You can comment the content of the app/Resources/config/security.yml file to disable the authentication on the application.
