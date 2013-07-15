@@ -13,12 +13,17 @@
         "doctrine/doctrine-bundle": "1.2.*",
         "twig/extensions": "1.0.*",
         "symfony/assetic-bundle": "2.3.*",
+        "symfony/swiftmailer-bundle": "~2.3",
         "symfony/monolog-bundle": "2.3.*",
         "sensio/distribution-bundle": "2.3.*",
         "sensio/framework-extra-bundle": "2.3.*",
         "sensio/generator-bundle": "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
-        "bigfoot/core-bundle": "dev-master"
+        "bigfoot/core-bundle": "dev-master",
+        "bigfoot/user-bundle": "dev-master",
+        "bigfoot/seo-bundle": "dev-master",
+        "doctrine/doctrine-fixtures-bundle": "dev-master",
+        "doctrine/data-fixtures": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [

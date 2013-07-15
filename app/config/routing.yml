@@ -2,3 +2,14 @@ bigfoot_core:
     resource: "@BigfootCoreBundle/Controller/"
     type:     annotation
     prefix:   /admin
+
+bigfoot_user:
+    resource: "@BigfootUserBundle/Controller/"
+    type:     annotation
+    prefix:   /admin
+
+bigfoot_seo:
+    resource: "@BigfootSeoBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1b5c0bed69e59b57b1edff73641db45c",
+    "hash": "4d1538cdc5ff485145ec28d97cafc646",
     "packages": [
         {
             "name": "bigfoot/core-bundle",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootCoreBundle.git",
-                "reference": "3963e26fc761916ee9a76d9bb0f2d2c758a5383a"
+                "reference": "886ab499f703dbe08d8cd07c76c74defca451e37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/3963e26fc761916ee9a76d9bb0f2d2c758a5383a",
-                "reference": "3963e26fc761916ee9a76d9bb0f2d2c758a5383a",
+                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/886ab499f703dbe08d8cd07c76c74defca451e37",
+                "reference": "886ab499f703dbe08d8cd07c76c74defca451e37",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +41,82 @@
                 }
             ],
             "description": "Bigfoot core bundle",
-            "time": "2013-07-11 07:51:29"
+            "time": "2013-07-15 08:34:52"
+        },
+        {
+            "name": "bigfoot/seo-bundle",
+            "version": "dev-master",
+            "target-dir": "Bigfoot/Bundle/SeoBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/c2is/BigfootSeoBundle.git",
+                "reference": "258b514d27a2371e50c4d100ca49bf78234794f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/c2is/BigfootSeoBundle/zipball/258b514d27a2371e50c4d100ca49bf78234794f9",
+                "reference": "258b514d27a2371e50c4d100ca49bf78234794f9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": ">=2.3"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Bigfoot\\Bundle\\SeoBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "S.Huot",
+                    "email": "s.huot@c2is.fr"
+                }
+            ],
+            "description": "Bigfoot seo bundle",
+            "time": "2013-07-15 10:15:32"
+        },
+        {
+            "name": "bigfoot/user-bundle",
+            "version": "dev-master",
+            "target-dir": "Bigfoot/Bundle/UserBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/c2is/BigfootUserBundle.git",
+                "reference": "5faa5ea4900a8895b5fc9838d8d25c0f7165bf93"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/c2is/BigfootUserBundle/zipball/5faa5ea4900a8895b5fc9838d8d25c0f7165bf93",
+                "reference": "5faa5ea4900a8895b5fc9838d8d25c0f7165bf93",
+                "shasum": ""
+            },
+            "require": {
+                "bigfoot/core-bundle": "dev-master"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Bigfoot\\Bundle\\UserBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guillaume Manen",
+                    "email": "g.manen@c2is.fr"
+                }
+            ],
+            "description": "Bigfoot user bundle",
+            "time": "2013-07-15 10:31:23"
         },
         {
             "name": "doctrine/common",
@@ -111,6 +186,61 @@
                 "spl"
             ],
             "time": "2012-09-19 22:55:18"
+        },
+        {
+            "name": "doctrine/data-fixtures",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/data-fixtures.git",
+                "reference": "b4a135c7db56ecc4602b54a2184368f440cac33e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/b4a135c7db56ecc4602b54a2184368f440cac33e",
+                "reference": "b4a135c7db56ecc4602b54a2184368f440cac33e",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/common": ">=2.2,<2.5-dev",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "doctrine/orm": ">=2.2,<2.5-dev"
+            },
+            "suggest": {
+                "doctrine/mongodb-odm": "For loading MongoDB ODM fixtures",
+                "doctrine/orm": "For loading ORM fixtures",
+                "doctrine/phpcr-odm": "For loading PHPCR ODM fixtures"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\DataFixtures": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com",
+                    "homepage": "http://www.jwage.com/"
+                }
+            ],
+            "description": "Data Fixtures for all Doctrine Object Managers",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "database"
+            ],
+            "time": "2013-07-10 17:04:07"
         },
         {
             "name": "doctrine/dbal",
@@ -244,6 +374,64 @@
                 "persistence"
             ],
             "time": "2013-03-25 20:13:59"
+        },
+        {
+            "name": "doctrine/doctrine-fixtures-bundle",
+            "version": "dev-master",
+            "target-dir": "Doctrine/Bundle/FixturesBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/DoctrineFixturesBundle.git",
+                "reference": "512fc0fa1d0ce7bdcc6a0a91812eb531f20e0828"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/512fc0fa1d0ce7bdcc6a0a91812eb531f20e0828",
+                "reference": "512fc0fa1d0ce7bdcc6a0a91812eb531f20e0828",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/data-fixtures": "*",
+                "doctrine/doctrine-bundle": "~1.0",
+                "php": ">=5.3.2",
+                "symfony/doctrine-bridge": ">=2.1.0,<2.4-dev"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Bundle\\FixturesBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Doctrine Project",
+                    "homepage": "http://www.doctrine-project.org"
+                }
+            ],
+            "description": "Symfony DoctrineFixturesBundle",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "Fixture",
+                "persistence"
+            ],
+            "time": "2013-06-21 10:31:45"
         },
         {
             "name": "doctrine/orm",
@@ -1213,7 +1401,11 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "bigfoot/core-bundle": 20
+        "bigfoot/core-bundle": 20,
+        "bigfoot/user-bundle": 20,
+        "bigfoot/seo-bundle": 20,
+        "doctrine/doctrine-fixtures-bundle": 20,
+        "doctrine/data-fixtures": 20
     },
     "platform": {
         "php": ">=5.3.3"
