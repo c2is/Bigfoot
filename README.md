@@ -16,7 +16,7 @@ Install dependencies using composer :
     curl -sS https://getcomposer.org/installer | php
     php composer.phar install
 
-Setup your database through the Symfony standard distribution configuration web interface :
+If you didn't set it up during the composer install, setup your database through the Symfony standard distribution configuration web interface :
 
     /app_dev.php/_configurator/step/0
 
