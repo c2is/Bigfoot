@@ -1,5 +1,4 @@
 bigfoot_core:
     resource: "@BigfootCoreBundle/Controller/"
     type:     annotation
-    prefix:   /
-
+    prefix:   /admin
