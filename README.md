@@ -13,6 +13,7 @@ Clone this project :
 
 Install dependencies using composer :
 
+    cd your_project
     curl -sS https://getcomposer.org/installer | php
     php composer.phar install
 
