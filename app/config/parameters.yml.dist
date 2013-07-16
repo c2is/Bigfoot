@@ -13,3 +13,9 @@ parameters:
 
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    bigfoot.theme.values:
+        logo: ~
+        title: "A sample site"
+        subtitle: "Bigfoot administration interface"
+

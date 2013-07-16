@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>A sample site</source>
+                <target>Mon site démo</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>Bigfoot administration interface</source>
+                <target>Interface d'administration Bigfoot</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>Copyright © 2013</source>
+                <target>Copyright © 2013</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>C2iS - Agence Digitale</source>
+                <target>C2iS - Agence Digitale</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
