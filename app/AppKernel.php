@@ -15,11 +15,12 @@ class AppKernel extends Kernel
             new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
+            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Bigfoot\Bundle\CoreBundle\BigfootCoreBundle(),
             new Bigfoot\Bundle\UserBundle\BigfootUserBundle(),
             new Bigfoot\Bundle\SeoBundle\BigfootSeoBundle(),
-            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+            new Bigfoot\Bundle\ImportBundle\BigfootImportBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

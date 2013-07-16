@@ -6,10 +6,14 @@ bigfoot_core:
 bigfoot_user:
     resource: "@BigfootUserBundle/Controller/"
     type:     annotation
-    prefix:   /admin
+    prefix:   /
 
 bigfoot_seo:
     resource: "@BigfootSeoBundle/Controller/"
     type:     annotation
     prefix:   /
 
+bigfoot_import:
+    resource: "@BigfootImportBundle/Controller/"
+    type:     annotation
+    prefix:   /
