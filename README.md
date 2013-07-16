@@ -35,6 +35,6 @@ Bigfoot comes with the SEO and User plugins.
 By default, an authentication is required to access (if you loaded the bundled fixtures, you can use the admin / admin account).
 Feel free to change the authentication configuration in app/Resources/config/security.yml to fit your needs, though be advised that the BigfootUserBundle features won't be usable if your User class doesn't extend the Bigfoot\Bundle\UserBundle\Model\BigfootUser class.
 
-You should craete a new admin user and delete the one loaded with the BigfootUserBundle fixtures if your application is accessible from the outside.
+You should create a new admin user and delete the one loaded with the BigfootUserBundle fixtures if your application is accessible from the outside.
 
 You can comment the content of the app/Resources/config/security.yml file to disable the authentication on the application.
