@@ -26,6 +26,17 @@ Load the schema and the fixtures to create your admin user :
     ./app/console doctrine:schema:update --force
     ./app/console doctrine:fixtures:load
 
+Set permissions on cache and logs directories
+
+    sudo setfacl -R -m u:www-data:rwx -m u:`whoami`:rwx app/cache/
+    sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/cache/
+    sudo setfacl -R -m u:www-data:rwx -m u:`whoami`:rwx app/logs/
+    sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/logs/
+
+On Macosx rather do this way
+
+    sudo chmod -R +a "_www allow delete,write,append,file_inherit,directory_inherit" app/cache/
+    sudo chmod -R +a "_www allow delete,write,append,file_inherit,directory_inherit" app/logs/
 
 Usage
 -----
