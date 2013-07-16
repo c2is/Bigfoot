@@ -13,6 +13,7 @@ Clone this project :
 
 Install dependencies using composer :
 
+    cd your_project
     curl -sS https://getcomposer.org/installer | php
     php composer.phar install
 
@@ -25,6 +26,17 @@ Load the schema and the fixtures to create your admin user :
     ./app/console doctrine:schema:update --force
     ./app/console doctrine:fixtures:load
 
+Set permissions on cache and logs directories
+
+    sudo setfacl -R -m u:www-data:rwx -m u:`whoami`:rwx app/cache/
+    sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/cache/
+    sudo setfacl -R -m u:www-data:rwx -m u:`whoami`:rwx app/logs/
+    sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/logs/
+
+On Macosx rather do this way
+
+    sudo chmod -R +a "_www allow delete,write,append,file_inherit,directory_inherit" app/cache/
+    sudo chmod -R +a "_www allow delete,write,append,file_inherit,directory_inherit" app/logs/
 
 Usage
 -----
@@ -35,6 +47,6 @@ Bigfoot comes with the SEO and User plugins.
 By default, an authentication is required to access (if you loaded the bundled fixtures, you can use the admin / admin account).
 Feel free to change the authentication configuration in app/Resources/config/security.yml to fit your needs, though be advised that the BigfootUserBundle features won't be usable if your User class doesn't extend the Bigfoot\Bundle\UserBundle\Model\BigfootUser class.
 
-You should craete a new admin user and delete the one loaded with the BigfootUserBundle fixtures if your application is accessible from the outside.
+You should create a new admin user and delete the one loaded with the BigfootUserBundle fixtures if your application is accessible from the outside.
 
 You can comment the content of the app/Resources/config/security.yml file to disable the authentication on the application.
