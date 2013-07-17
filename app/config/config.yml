@@ -87,7 +87,6 @@ doctrine:
                         is_bundle: false
                     BigfootCoreBundle: ~
                     BigfootUserBundle: ~
-                    BigfootMediaBundle: ~
                     BigfootSeoBundle: ~
                     BigfootImportBundle: ~
                 filters:
