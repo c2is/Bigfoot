@@ -12,16 +12,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootCoreBundle.git",
-                "reference": "1692177b645cc36289bbec5f70ab41df66ab245a"
+                "reference": "f7c05e38753bc0857c9c04a54a282fa26a3c938c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/1692177b645cc36289bbec5f70ab41df66ab245a",
-                "reference": "1692177b645cc36289bbec5f70ab41df66ab245a",
+                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/f7c05e38753bc0857c9c04a54a282fa26a3c938c",
+                "reference": "f7c05e38753bc0857c9c04a54a282fa26a3c938c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
+                "stof/doctrine-extensions-bundle": "~1.1@dev",
                 "symfony/framework-bundle": ">=2.3"
             },
             "type": "symfony-bundle",
@@ -41,7 +42,7 @@
                 }
             ],
             "description": "Bigfoot core bundle",
-            "time": "2013-07-15 16:22:46"
+            "time": "2013-07-17 07:52:02"
         },
         {
             "name": "bigfoot/import-bundle",
@@ -124,12 +125,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootUserBundle.git",
-                "reference": "d85b279a4d3b2a84b5801ce937d95bf1b1b80457"
+                "reference": "477cc775bf5a4454a30cdc748ab871053572161a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootUserBundle/zipball/d85b279a4d3b2a84b5801ce937d95bf1b1b80457",
-                "reference": "d85b279a4d3b2a84b5801ce937d95bf1b1b80457",
+                "url": "https://api.github.com/repos/c2is/BigfootUserBundle/zipball/477cc775bf5a4454a30cdc748ab871053572161a",
+                "reference": "477cc775bf5a4454a30cdc748ab871053572161a",
                 "shasum": ""
             },
             "require": {
@@ -152,7 +153,7 @@
                 }
             ],
             "description": "Bigfoot user bundle",
-            "time": "2013-07-15 16:23:08"
+            "time": "2013-07-16 07:33:23"
         },
         {
             "name": "doctrine/common",
@@ -538,6 +539,86 @@
                 "orm"
             ],
             "time": "2013-05-11 07:51:12"
+        },
+        {
+            "name": "gedmo/doctrine-extensions",
+            "version": "v2.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/l3pp4rd/DoctrineExtensions.git",
+                "reference": "v2.3.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/v2.3.6",
+                "reference": "v2.3.6",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/common": ">=2.2,<2.5-dev",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "doctrine/common": ">=2.4.0-BETA2",
+                "doctrine/dbal": ">=2.4.0-BETA2",
+                "doctrine/mongodb": ">=1.0.2",
+                "doctrine/mongodb-odm": ">=1.0.0-BETA8",
+                "doctrine/orm": ">=2.4.0-BETA2",
+                "symfony/yaml": "2.*"
+            },
+            "suggest": {
+                "doctrine/dbal": ">=2.3.2",
+                "doctrine/mongodb": ">=1.0.1",
+                "doctrine/mongodb-odm": ">=1.0.0-BETA7",
+                "doctrine/orm": ">=2.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Gedmo": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Buchmann",
+                    "email": "david@liip.ch"
+                },
+                {
+                    "name": "Gediminas Morkevicius",
+                    "email": "gediminas.morkevicius@gmail.com"
+                },
+                {
+                    "name": "Gustavo Falco",
+                    "email": "comfortablynumb84@gmail.com"
+                }
+            ],
+            "description": "Doctrine2 behavioral extensions",
+            "homepage": "http://gediminasm.org/",
+            "keywords": [
+                "Blameable",
+                "behaviors",
+                "doctrine2",
+                "extensions",
+                "gedmo",
+                "loggable",
+                "nestedset",
+                "sluggable",
+                "sortable",
+                "timestampable",
+                "translatable",
+                "tree",
+                "uploadable"
+            ],
+            "time": "2013-05-21 12:09:55"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -950,6 +1031,68 @@
             ],
             "description": "This bundle generates code for you",
             "time": "2013-06-05 17:32:22"
+        },
+        {
+            "name": "stof/doctrine-extensions-bundle",
+            "version": "v1.1.0",
+            "target-dir": "Stof/DoctrineExtensionsBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stof/StofDoctrineExtensionsBundle.git",
+                "reference": "v1.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stof/StofDoctrineExtensionsBundle/zipball/v1.1.0",
+                "reference": "v1.1.0",
+                "shasum": ""
+            },
+            "require": {
+                "gedmo/doctrine-extensions": "2.3.*",
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": ">=2.1,<3.0"
+            },
+            "suggest": {
+                "doctrine/doctrine-bundle": "to use the ORM extensions",
+                "doctrine/mongodb-odm-bundle": "to use the MongoDB ODM extensions"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Stof\\DoctrineExtensionsBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christophe Coevoet",
+                    "email": "stof@notk.org"
+                }
+            ],
+            "description": "Integration of the gedmo/doctrine-extensions with Symfony2",
+            "homepage": "https://github.com/stof/StofDoctrineExtensionsBundle",
+            "keywords": [
+                "behaviors",
+                "doctrine2",
+                "extensions",
+                "gedmo",
+                "loggable",
+                "nestedset",
+                "sluggable",
+                "sortable",
+                "timestampable",
+                "translatable",
+                "tree"
+            ],
+            "time": "2013-06-23 16:53:41"
         },
         {
             "name": "swiftmailer/swiftmailer",

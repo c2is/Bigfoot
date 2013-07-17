@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new Bigfoot\Bundle\UserBundle\BigfootUserBundle(),
             new Bigfoot\Bundle\SeoBundle\BigfootSeoBundle(),
             new Bigfoot\Bundle\ImportBundle\BigfootImportBundle(),
+            new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
