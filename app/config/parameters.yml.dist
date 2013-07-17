@@ -18,4 +18,4 @@ parameters:
         logo: ~
         title: "A sample site"
         subtitle: "Bigfoot administration interface"
-
+        provided_by: "C2iS - Agence Digitale"
