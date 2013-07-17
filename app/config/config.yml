@@ -55,11 +55,11 @@ doctrine:
     orm:
         default_entity_manager: bigfoot
         auto_generate_proxy_classes: %kernel.debug%
-        naming_strategy: doctrine.orm.naming_strategy.underscore
         entity_managers:
             bigfoot:
                 connection: default
                 auto_mapping: false
+                naming_strategy: doctrine.orm.naming_strategy.underscore
                 mappings:
                     gedmo_translatable:
                         type: annotation
