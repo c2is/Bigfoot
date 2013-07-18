@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new Bigfoot\Bundle\UserBundle\BigfootUserBundle(),
             new Bigfoot\Bundle\SeoBundle\BigfootSeoBundle(),
             new Bigfoot\Bundle\ImportBundle\BigfootImportBundle(),
+            new Bigfoot\Bundle\MediaBundle\BigfootMediaBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
         );
 
