@@ -51,12 +51,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootImportBundle.git",
-                "reference": "a7826dae645b9ffd709a9821c428851177be84f3"
+                "reference": "245aa5019e515cb041113aec8ca230e5da39ed29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootImportBundle/zipball/a7826dae645b9ffd709a9821c428851177be84f3",
-                "reference": "a7826dae645b9ffd709a9821c428851177be84f3",
+                "url": "https://api.github.com/repos/c2is/BigfootImportBundle/zipball/245aa5019e515cb041113aec8ca230e5da39ed29",
+                "reference": "245aa5019e515cb041113aec8ca230e5da39ed29",
                 "shasum": ""
             },
             "require": {
@@ -83,7 +83,7 @@
                 }
             ],
             "description": "Bigfoot import bundle",
-            "time": "2013-07-18 12:33:43"
+            "time": "2013-07-18 16:05:11"
         },
         {
             "name": "bigfoot/media-bundle",

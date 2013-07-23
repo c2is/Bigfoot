@@ -14,8 +14,14 @@ parameters:
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
 
-    bigfoot.theme.values:
-        logo: ~
-        title: "A sample site"
-        subtitle: "Bigfoot administration interface"
-        provided_by: "C2iS - Agence Digitale"
+    bigfoot:
+        theme.values:
+            logo: ~
+            title: "A sample site"
+            subtitle: "Bigfoot administration interface"
+            provided_by: "C2iS - Agence Digitale"
+            bundle: "BigfootCoreBundle"
+        core:
+            upload_dir: "uploads/"
+        media:
+            portfolio_dir: "portfolio/"
