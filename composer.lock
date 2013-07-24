@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootCoreBundle.git",
-                "reference": "f7c05e38753bc0857c9c04a54a282fa26a3c938c"
+                "reference": "971dbf4273785695aee9afbb6ee57c9de2ee27f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/f7c05e38753bc0857c9c04a54a282fa26a3c938c",
-                "reference": "f7c05e38753bc0857c9c04a54a282fa26a3c938c",
+                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/971dbf4273785695aee9afbb6ee57c9de2ee27f4",
+                "reference": "971dbf4273785695aee9afbb6ee57c9de2ee27f4",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
                 }
             ],
             "description": "Bigfoot core bundle",
-            "time": "2013-07-17 07:52:02"
+            "time": "2013-07-24 09:48:48"
         },
         {
             "name": "bigfoot/import-bundle",
@@ -51,12 +51,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootImportBundle.git",
-                "reference": "245aa5019e515cb041113aec8ca230e5da39ed29"
+                "reference": "204985ee23f9969986630af6d42198e8989ba50a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootImportBundle/zipball/245aa5019e515cb041113aec8ca230e5da39ed29",
-                "reference": "245aa5019e515cb041113aec8ca230e5da39ed29",
+                "url": "https://api.github.com/repos/c2is/BigfootImportBundle/zipball/204985ee23f9969986630af6d42198e8989ba50a",
+                "reference": "204985ee23f9969986630af6d42198e8989ba50a",
                 "shasum": ""
             },
             "require": {
@@ -83,7 +83,7 @@
                 }
             ],
             "description": "Bigfoot import bundle",
-            "time": "2013-07-18 16:05:11"
+            "time": "2013-07-23 09:23:48"
         },
         {
             "name": "bigfoot/media-bundle",
@@ -92,12 +92,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootMediaBundle.git",
-                "reference": "f37c0311dfd06dac0657f77796b918bd4a4270f6"
+                "reference": "fee6dd5b0a6eacf7c8ebd66b647a866e82f16cee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootMediaBundle/zipball/f37c0311dfd06dac0657f77796b918bd4a4270f6",
-                "reference": "f37c0311dfd06dac0657f77796b918bd4a4270f6",
+                "url": "https://api.github.com/repos/c2is/BigfootMediaBundle/zipball/fee6dd5b0a6eacf7c8ebd66b647a866e82f16cee",
+                "reference": "fee6dd5b0a6eacf7c8ebd66b647a866e82f16cee",
                 "shasum": ""
             },
             "require": {
@@ -120,7 +120,7 @@
                 }
             ],
             "description": "Bigfoot media bundle",
-            "time": "2013-07-18 14:56:46"
+            "time": "2013-07-24 09:54:18"
         },
         {
             "name": "bigfoot/seo-bundle",
@@ -129,12 +129,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootSeoBundle.git",
-                "reference": "fecc193ac1565f7b4bee1a39f5f1efb3799660bf"
+                "reference": "9cf8803f786a04c26f941ffb55af6bf5049c925f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootSeoBundle/zipball/fecc193ac1565f7b4bee1a39f5f1efb3799660bf",
-                "reference": "fecc193ac1565f7b4bee1a39f5f1efb3799660bf",
+                "url": "https://api.github.com/repos/c2is/BigfootSeoBundle/zipball/9cf8803f786a04c26f941ffb55af6bf5049c925f",
+                "reference": "9cf8803f786a04c26f941ffb55af6bf5049c925f",
                 "shasum": ""
             },
             "require": {
@@ -157,7 +157,7 @@
                 }
             ],
             "description": "Bigfoot seo bundle",
-            "time": "2013-07-18 12:23:41"
+            "time": "2013-07-23 13:16:49"
         },
         {
             "name": "bigfoot/user-bundle",
@@ -166,12 +166,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootUserBundle.git",
-                "reference": "267a64bdaf726e982a7a19b2551aa06af63ad58e"
+                "reference": "cc373d8f3f8535a26aa84024815a906567e8d57d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootUserBundle/zipball/267a64bdaf726e982a7a19b2551aa06af63ad58e",
-                "reference": "267a64bdaf726e982a7a19b2551aa06af63ad58e",
+                "url": "https://api.github.com/repos/c2is/BigfootUserBundle/zipball/cc373d8f3f8535a26aa84024815a906567e8d57d",
+                "reference": "cc373d8f3f8535a26aa84024815a906567e8d57d",
                 "shasum": ""
             },
             "require": {
@@ -194,7 +194,7 @@
                 }
             ],
             "description": "Bigfoot user bundle",
-            "time": "2013-07-17 14:09:35"
+            "time": "2013-07-23 16:42:24"
         },
         {
             "name": "doctrine/common",
@@ -763,21 +763,21 @@
         },
         {
             "name": "kriswallsmith/assetic",
-            "version": "v1.1.1",
+            "version": "v1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "v1.1.1"
+                "reference": "v1.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/v1.1.1",
-                "reference": "v1.1.1",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/v1.1.2",
+                "reference": "v1.1.2",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.1",
-                "symfony/process": ">=2.1,<3.0"
+                "symfony/process": "~2.1"
             },
             "require-dev": {
                 "cssmin/cssmin": "*",
@@ -787,9 +787,9 @@
                 "leafo/scssphp": "*",
                 "leafo/scssphp-compass": "*",
                 "mrclay/minify": "*",
-                "phpunit/phpunit": ">=3.7,<4.0",
+                "phpunit/phpunit": "~3.7",
                 "ptachoire/cssembed": "*",
-                "twig/twig": ">=1.6,<2.0"
+                "twig/twig": "~1.6"
             },
             "suggest": {
                 "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
@@ -830,7 +830,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2013-06-01 22:13:43"
+            "time": "2013-07-19 00:03:27"
         },
         {
             "name": "monolog/monolog",
