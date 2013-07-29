@@ -21,7 +21,7 @@ Install dependencies using composer :
 
     /app_dev.php/_configurator/step/0
     
-If you're using a database you didn't previously create, Doctrine can do it for you (*this is a safe command you can use even if the database already exists, it will throw an error and won't wipe it*) :
+If you're using a database you didn't previously create, Doctrine can do it for you (this is a safe command you can use even if the database already exists) :
 
     ./app/console doctrine:database:create
 
