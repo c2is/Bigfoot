@@ -17,11 +17,15 @@ Install dependencies using composer :
     curl -sS https://getcomposer.org/installer | php
     php composer.phar install
 
-If you didn't set it up during the composer install, setup your database through the Symfony standard distribution configuration web interface :
+**If you didn't set it up during the composer install**, setup your database through the Symfony standard distribution configuration web interface :
 
     /app_dev.php/_configurator/step/0
+    
+If you're using a database you didn't previously create, Doctrine can do it for you (*this is a safe command you can use even if the database already exists, it will throw an error and won't wipe it*) :
 
-Load the schema and the fixtures to create your admin user :
+    ./app/console doctrine:database:create
+
+Load the schema and the fixtures :
 
     ./app/console doctrine:schema:update --force
     ./app/console doctrine:fixtures:load
