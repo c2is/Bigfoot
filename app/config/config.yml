@@ -109,3 +109,17 @@ swiftmailer:
     username:  %mailer_user%
     password:  %mailer_password%
     spool:     { type: memory }
+
+bigfoot_context:
+    contexts:
+        language:
+            loaders:
+                back: "bigfoot_language_loader"
+            values:
+                fr:
+                    label: "French"
+                    value: "fr"
+                en:
+                    label: "English"
+                    value: "en"
+            default_value: %locale%

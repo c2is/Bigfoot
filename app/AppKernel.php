@@ -22,7 +22,7 @@ class AppKernel extends Kernel
             new Bigfoot\Bundle\SeoBundle\BigfootSeoBundle(),
             new Bigfoot\Bundle\ImportBundle\BigfootImportBundle(),
             new Bigfoot\Bundle\MediaBundle\BigfootMediaBundle(),
-            new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+            new Bigfoot\Bundle\ContextBundle\BigfootContextBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
