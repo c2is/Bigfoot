@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootContextBundle.git",
-                "reference": "d5241f1ba4af081330854a85466176eaf4b8f04c"
+                "reference": "c6d7ae28026344365e7d905f1020f57df4d21c26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootContextBundle/zipball/d5241f1ba4af081330854a85466176eaf4b8f04c",
-                "reference": "d5241f1ba4af081330854a85466176eaf4b8f04c",
+                "url": "https://api.github.com/repos/c2is/BigfootContextBundle/zipball/c6d7ae28026344365e7d905f1020f57df4d21c26",
+                "reference": "c6d7ae28026344365e7d905f1020f57df4d21c26",
                 "shasum": ""
             },
             "require": {
@@ -40,7 +40,7 @@
                 }
             ],
             "description": "Bigfoot context bundle",
-            "time": "2013-08-05 10:18:16"
+            "time": "2013-08-05 14:15:12"
         },
         {
             "name": "bigfoot/core-bundle",
@@ -49,12 +49,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootCoreBundle.git",
-                "reference": "6bfa886e808d822b3a4dab205586436b469829da"
+                "reference": "070c26bbc542723d3928b38777a56d8e4eae2d68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/6bfa886e808d822b3a4dab205586436b469829da",
-                "reference": "6bfa886e808d822b3a4dab205586436b469829da",
+                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/070c26bbc542723d3928b38777a56d8e4eae2d68",
+                "reference": "070c26bbc542723d3928b38777a56d8e4eae2d68",
                 "shasum": ""
             },
             "require": {
@@ -78,7 +78,7 @@
                 }
             ],
             "description": "Bigfoot core bundle",
-            "time": "2013-08-05 12:00:44"
+            "time": "2013-08-05 14:25:39"
         },
         {
             "name": "bigfoot/import-bundle",
@@ -1686,12 +1686,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atoum/atoum.git",
-                "reference": "5ad64e47f2dd859f90aeede8198e3ac076bcdf6c"
+                "reference": "bdcc723a2353b4eced81b7c4888c8e95385f36c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atoum/atoum/zipball/5ad64e47f2dd859f90aeede8198e3ac076bcdf6c",
-                "reference": "5ad64e47f2dd859f90aeede8198e3ac076bcdf6c",
+                "url": "https://api.github.com/repos/atoum/atoum/zipball/bdcc723a2353b4eced81b7c4888c8e95385f36c3",
+                "reference": "bdcc723a2353b4eced81b7c4888c8e95385f36c3",
                 "shasum": ""
             },
             "require": {
@@ -1752,7 +1752,7 @@
                 "test",
                 "unit testing"
             ],
-            "time": "2013-08-02 09:23:38"
+            "time": "2013-08-06 07:00:14"
         },
         {
             "name": "atoum/atoum-bundle",
