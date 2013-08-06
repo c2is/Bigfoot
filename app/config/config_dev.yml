@@ -33,3 +33,4 @@ assetic:
 atoum:
     bundles:
         BigfootContextBundle: ~
+        BigfootCoreBundle: ~
