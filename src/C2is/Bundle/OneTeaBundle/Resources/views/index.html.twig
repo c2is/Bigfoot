@@ -1,5 +1,0 @@
-<ul>
-    {% for templatePath, template in templates %}
-    <li><a href="{{ path('html_page', {template: templatePath | e('url') }) }}">{{ template }}</a></li>
-    {% endfor %}
-</ul>
