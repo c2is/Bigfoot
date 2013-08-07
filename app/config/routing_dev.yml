@@ -12,7 +12,3 @@ _configurator:
 
 _main:
     resource: routing.yml
-
-c2is_onetea:
-    resource: "@C2isOneTeaBundle/Controller"
-    type:     annotation
