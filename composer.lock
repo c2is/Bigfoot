@@ -49,12 +49,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootCoreBundle.git",
-                "reference": "98108395469403297d8a59a97fada0ab203803ec"
+                "reference": "18fd54c40efb06e7322717620f33a6aaff4a4106"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/98108395469403297d8a59a97fada0ab203803ec",
-                "reference": "98108395469403297d8a59a97fada0ab203803ec",
+                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/18fd54c40efb06e7322717620f33a6aaff4a4106",
+                "reference": "18fd54c40efb06e7322717620f33a6aaff4a4106",
                 "shasum": ""
             },
             "require": {
@@ -78,7 +78,7 @@
                 }
             ],
             "description": "Bigfoot core bundle",
-            "time": "2013-08-08 13:59:35"
+            "time": "2013-08-08 14:07:32"
         },
         {
             "name": "bigfoot/import-bundle",
