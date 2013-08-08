@@ -1,0 +1,17 @@
+bigfoot_user:
+    menu_security:
+        toolbar_user_settings:
+            - ROLE_USER
+        toolbar_user_logout:
+            - ROLE_SEO
+            - ROLE_USER
+        sidebar_settings:
+            - ROLE_USER
+        sidebar_user:
+            - ROLE_USER
+        metadata:
+            - ROLE_USER
+        sidebar_settings_import:
+            - ROLE_USER
+        sidebar_tags:
+            - ROLE_USER
