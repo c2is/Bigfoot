@@ -37,6 +37,7 @@ twig:
 assetic:
     debug:          %kernel.debug%
     use_controller: false
+    write_to:       %kernel.root_dir%/../web/compiled/
     bundles: [ ]
     #java: /usr/bin/java
     filters:
@@ -112,6 +113,8 @@ swiftmailer:
     spool:     { type: memory }
 
 bigfoot_context:
+    entities:
+        - "Bigfoot*"
     contexts:
         language:
             loaders:
@@ -124,3 +127,4 @@ bigfoot_context:
                     label: "English"
                     value: "en"
             default_value: %locale%
+            label: "Language"
