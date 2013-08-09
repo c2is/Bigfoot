@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootContextBundle.git",
-                "reference": "f6400f91ea2bd1f678de1c7e8b6959359283c00e"
+                "reference": "8cb19f5e98427f563537c44da658dfce74be8eec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootContextBundle/zipball/f6400f91ea2bd1f678de1c7e8b6959359283c00e",
-                "reference": "f6400f91ea2bd1f678de1c7e8b6959359283c00e",
+                "url": "https://api.github.com/repos/c2is/BigfootContextBundle/zipball/8cb19f5e98427f563537c44da658dfce74be8eec",
+                "reference": "8cb19f5e98427f563537c44da658dfce74be8eec",
                 "shasum": ""
             },
             "require": {
@@ -40,7 +40,7 @@
                 }
             ],
             "description": "Bigfoot context bundle",
-            "time": "2013-08-08 13:55:22"
+            "time": "2013-08-08 14:04:04"
         },
         {
             "name": "bigfoot/core-bundle",
