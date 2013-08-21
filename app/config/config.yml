@@ -105,6 +105,10 @@ doctrine:
                     softdeleteable:
                         class: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
                         enabled: true
+                dql:
+                    numeric_functions:
+                        point_str: Bigfoot\Bundle\CoreBundle\ORM\PointStr
+                        distance: Bigfoot\Bundle\CoreBundle\ORM\Distance
 
 # Swiftmailer Configuration
 swiftmailer:
