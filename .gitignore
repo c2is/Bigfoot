@@ -1,5 +1,7 @@
 /web/bundles/
-/web/compiled/
+/web/*/compiled/
+/web/bigfoot/css/
+/web/bigfoot/js/
 /web/uploads/
 /app/bootstrap.php.cache
 /app/cache/*

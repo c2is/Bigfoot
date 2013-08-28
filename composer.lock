@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootContextBundle.git",
-                "reference": "8cb19f5e98427f563537c44da658dfce74be8eec"
+                "reference": "ed453b89124d6d4491cde340f5d044277c369de3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootContextBundle/zipball/8cb19f5e98427f563537c44da658dfce74be8eec",
-                "reference": "8cb19f5e98427f563537c44da658dfce74be8eec",
+                "url": "https://api.github.com/repos/c2is/BigfootContextBundle/zipball/ed453b89124d6d4491cde340f5d044277c369de3",
+                "reference": "ed453b89124d6d4491cde340f5d044277c369de3",
                 "shasum": ""
             },
             "require": {
@@ -40,7 +40,7 @@
                 }
             ],
             "description": "Bigfoot context bundle",
-            "time": "2013-08-08 14:04:04"
+            "time": "2013-08-09 08:50:17"
         },
         {
             "name": "bigfoot/core-bundle",
@@ -49,12 +49,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootCoreBundle.git",
-                "reference": "9feefc7d34c7b470a0061db76bcd367eb83240a0"
+                "reference": "52f86be86265e9eecef85a0bb70e5c78616aaa9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/9feefc7d34c7b470a0061db76bcd367eb83240a0",
-                "reference": "9feefc7d34c7b470a0061db76bcd367eb83240a0",
+                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/52f86be86265e9eecef85a0bb70e5c78616aaa9b",
+                "reference": "52f86be86265e9eecef85a0bb70e5c78616aaa9b",
                 "shasum": ""
             },
             "require": {
@@ -78,7 +78,7 @@
                 }
             ],
             "description": "Bigfoot core bundle",
-            "time": "2013-08-20 09:25:51"
+            "time": "2013-08-28 07:53:52"
         },
         {
             "name": "bigfoot/import-bundle",
@@ -87,12 +87,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootImportBundle.git",
-                "reference": "205a5d5ff92a369a0854fd13afe30c846d9a875c"
+                "reference": "84d59c1ac61e34f7200240e20907431936be88aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootImportBundle/zipball/205a5d5ff92a369a0854fd13afe30c846d9a875c",
-                "reference": "205a5d5ff92a369a0854fd13afe30c846d9a875c",
+                "url": "https://api.github.com/repos/c2is/BigfootImportBundle/zipball/84d59c1ac61e34f7200240e20907431936be88aa",
+                "reference": "84d59c1ac61e34f7200240e20907431936be88aa",
                 "shasum": ""
             },
             "require": {
@@ -119,7 +119,7 @@
                 }
             ],
             "description": "Bigfoot import bundle",
-            "time": "2013-08-07 16:47:12"
+            "time": "2013-08-22 08:06:41"
         },
         {
             "name": "bigfoot/media-bundle",
@@ -202,12 +202,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootUserBundle.git",
-                "reference": "b99938535ae402a543dcd1bafd78b64b65f9b49a"
+                "reference": "6a956cb39b8b62f10a433254f9747e42525d0832"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootUserBundle/zipball/b99938535ae402a543dcd1bafd78b64b65f9b49a",
-                "reference": "b99938535ae402a543dcd1bafd78b64b65f9b49a",
+                "url": "https://api.github.com/repos/c2is/BigfootUserBundle/zipball/6a956cb39b8b62f10a433254f9747e42525d0832",
+                "reference": "6a956cb39b8b62f10a433254f9747e42525d0832",
                 "shasum": ""
             },
             "require": {
@@ -230,7 +230,7 @@
                 }
             ],
             "description": "Bigfoot user bundle",
-            "time": "2013-08-08 09:55:33"
+            "time": "2013-08-09 17:46:01"
         },
         {
             "name": "doctrine/common",
@@ -623,12 +623,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/l3pp4rd/DoctrineExtensions.git",
-                "reference": "fb0aeab1341c7e29cc76e9f3865b8c7fa7df82cf"
+                "reference": "e4829eee5d249250dabedbd4af1a7d5e1fa5d58e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/fb0aeab1341c7e29cc76e9f3865b8c7fa7df82cf",
-                "reference": "fb0aeab1341c7e29cc76e9f3865b8c7fa7df82cf",
+                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/e4829eee5d249250dabedbd4af1a7d5e1fa5d58e",
+                "reference": "e4829eee5d249250dabedbd4af1a7d5e1fa5d58e",
                 "shasum": ""
             },
             "require": {
@@ -695,7 +695,7 @@
                 "tree",
                 "uploadable"
             ],
-            "time": "2013-08-07 11:28:20"
+            "time": "2013-08-26 15:55:06"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -803,12 +803,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/twig.js.git",
-                "reference": "45da4ca39f4fe973541e452286f584e306751788"
+                "reference": "0b0099de23a8fcbab25666586cf4911689ce09e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/twig.js/zipball/45da4ca39f4fe973541e452286f584e306751788",
-                "reference": "45da4ca39f4fe973541e452286f584e306751788",
+                "url": "https://api.github.com/repos/schmittjoh/twig.js/zipball/0b0099de23a8fcbab25666586cf4911689ce09e2",
+                "reference": "0b0099de23a8fcbab25666586cf4911689ce09e2",
                 "shasum": ""
             },
             "require": {
@@ -842,7 +842,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-08-04 15:13:17"
+            "time": "2013-08-26 09:51:14"
         },
         {
             "name": "jms/twig-js-bundle",
@@ -1062,17 +1062,17 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v2.3.3",
+            "version": "v2.3.4",
             "target-dir": "Sensio/Bundle/DistributionBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "v2.3.3"
+                "reference": "66df91b4bd637a83299d8072aed3658bfd3b3021"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/v2.3.3",
-                "reference": "v2.3.3",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/66df91b4bd637a83299d8072aed3658bfd3b3021",
+                "reference": "66df91b4bd637a83299d8072aed3658bfd3b3021",
                 "shasum": ""
             },
             "require": {
@@ -1104,21 +1104,21 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2013-07-24 08:45:20"
+            "time": "2013-08-22 05:04:53"
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v2.3.3",
+            "version": "v2.3.4",
             "target-dir": "Sensio/Bundle/FrameworkExtraBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "v2.3.3"
+                "reference": "cce05719041d952bbec856789ca18646a1891d03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/v2.3.3",
-                "reference": "v2.3.3",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/cce05719041d952bbec856789ca18646a1891d03",
+                "reference": "cce05719041d952bbec856789ca18646a1891d03",
                 "shasum": ""
             },
             "require": {
@@ -1155,17 +1155,17 @@
         },
         {
             "name": "sensio/generator-bundle",
-            "version": "v2.3.3",
+            "version": "v2.3.4",
             "target-dir": "Sensio/Bundle/GeneratorBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "v2.3.3"
+                "reference": "4a7b126e9c22f858e3584b19ddce6e5bdd7677ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/v2.3.3",
-                "reference": "v2.3.3",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/4a7b126e9c22f858e3584b19ddce6e5bdd7677ee",
+                "reference": "4a7b126e9c22f858e3584b19ddce6e5bdd7677ee",
                 "shasum": ""
             },
             "require": {
@@ -1199,7 +1199,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2013-07-24 09:19:19"
+            "time": "2013-08-21 18:09:35"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1421,17 +1421,17 @@
         },
         {
             "name": "symfony/swiftmailer-bundle",
-            "version": "v2.3.3",
+            "version": "v2.3.4",
             "target-dir": "Symfony/Bundle/SwiftmailerBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/SwiftmailerBundle.git",
-                "reference": "v2.3.3"
+                "reference": "f5e5d12629c26a835c7aa1d74e2e041486b92d93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/SwiftmailerBundle/zipball/v2.3.3",
-                "reference": "v2.3.3",
+                "url": "https://api.github.com/repos/symfony/SwiftmailerBundle/zipball/f5e5d12629c26a835c7aa1d74e2e041486b92d93",
+                "reference": "f5e5d12629c26a835c7aa1d74e2e041486b92d93",
                 "shasum": ""
             },
             "require": {
@@ -1472,20 +1472,20 @@
             ],
             "description": "Symfony SwiftmailerBundle",
             "homepage": "http://symfony.com",
-            "time": "2013-08-05 08:18:16"
+            "time": "2013-08-22 13:32:58"
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.3.3",
+            "version": "v2.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "v2.3.3"
+                "reference": "4fb225f4e315c11aa6d8935b1c0ceaf48ba39f1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/v2.3.3",
-                "reference": "v2.3.3",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/4fb225f4e315c11aa6d8935b1c0ceaf48ba39f1f",
+                "reference": "4fb225f4e315c11aa6d8935b1c0ceaf48ba39f1f",
                 "shasum": ""
             },
             "require": {
@@ -1580,7 +1580,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-08-07 17:11:16"
+            "time": "2013-08-27 08:58:24"
         },
         {
             "name": "twig/extensions",
@@ -1686,12 +1686,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atoum/atoum.git",
-                "reference": "587a130bbfc77f9d3e60ada33386df0d330c005b"
+                "reference": "89ff5d4d62cc51520247749cf4b3a9d82e07ec77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atoum/atoum/zipball/587a130bbfc77f9d3e60ada33386df0d330c005b",
-                "reference": "587a130bbfc77f9d3e60ada33386df0d330c005b",
+                "url": "https://api.github.com/repos/atoum/atoum/zipball/89ff5d4d62cc51520247749cf4b3a9d82e07ec77",
+                "reference": "89ff5d4d62cc51520247749cf4b3a9d82e07ec77",
                 "shasum": ""
             },
             "require": {
@@ -1752,7 +1752,7 @@
                 "test",
                 "unit testing"
             ],
-            "time": "2013-08-06 11:38:39"
+            "time": "2013-08-16 11:37:39"
         },
         {
             "name": "atoum/atoum-bundle",
@@ -1761,12 +1761,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atoum/AtoumBundle.git",
-                "reference": "0d40d45967f8a3440ff61e6376e383a7c53bc098"
+                "reference": "0d267533958472ff6ecdb3d30323b303b9f16459"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atoum/AtoumBundle/zipball/0d40d45967f8a3440ff61e6376e383a7c53bc098",
-                "reference": "0d40d45967f8a3440ff61e6376e383a7c53bc098",
+                "url": "https://api.github.com/repos/atoum/AtoumBundle/zipball/0d267533958472ff6ecdb3d30323b303b9f16459",
+                "reference": "0d267533958472ff6ecdb3d30323b303b9f16459",
                 "shasum": ""
             },
             "require": {
@@ -1809,7 +1809,7 @@
                 "test",
                 "unit testing"
             ],
-            "time": "2013-08-02 07:39:38"
+            "time": "2013-08-08 12:12:08"
         },
         {
             "name": "fzaninotto/faker",
