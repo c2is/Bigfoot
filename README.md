@@ -54,3 +54,11 @@ Feel free to change the authentication configuration in app/Resources/config/sec
 You should create a new admin user and delete the one loaded with the BigfootUserBundle fixtures if your application is accessible from the outside.
 
 You can comment the content of the app/Resources/config/security.yml file to disable the authentication on the application.
+
+
+Assetic
+-------
+
+Bigfoot assets are loaded via Assetic and are gitignored. To have the admin interface display properly in the production environment, you first must dump the assets with :
+
+    ./app/console assetic:dump --env=prod
