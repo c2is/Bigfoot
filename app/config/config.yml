@@ -29,16 +29,13 @@ twig:
     form:
         resources:
             - 'form_div_layout.html.twig'
-            - 'BigfootCoreBundle:form:form_custom_layout.html.twig'
     globals:
-        bigfoot_theme_values: %bigfoot.theme.values%
         locales: %available_languages%
 
 # Assetic Configuration
 assetic:
     debug:          %kernel.debug%
     use_controller: false
-    write_to:       %kernel.root_dir%/../web/compiled/
     bundles: [ ]
     #java: /usr/bin/java
     filters:

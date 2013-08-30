@@ -1,0 +1,5 @@
+_admin:
+    resource: routing_admin.yml
+
+_dev:
+    resource: routing_dev.yml

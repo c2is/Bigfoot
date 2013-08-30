@@ -27,3 +27,6 @@ bigfoot_import:
     resource: "@BigfootImportBundle/Controller/"
     type:     annotation
     prefix:   /
+
+_main:
+    resource: routing.yml
