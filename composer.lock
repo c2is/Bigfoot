@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2206369cbf0032e2a149bb296c182402",
+    "hash": "55f6dac2da95b770a64055748ce0bd39",
     "packages": [
         {
             "name": "bigfoot/context-bundle",
@@ -49,12 +49,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootCoreBundle.git",
-                "reference": "bc4d119b41e202bde35927a6fb37ca52417fd495"
+                "reference": "b77e3498100b3bfa535d0e63b9b93cfe6cb5143f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/bc4d119b41e202bde35927a6fb37ca52417fd495",
-                "reference": "bc4d119b41e202bde35927a6fb37ca52417fd495",
+                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/b77e3498100b3bfa535d0e63b9b93cfe6cb5143f",
+                "reference": "b77e3498100b3bfa535d0e63b9b93cfe6cb5143f",
                 "shasum": ""
             },
             "require": {
@@ -78,7 +78,7 @@
                 }
             ],
             "description": "Bigfoot core bundle",
-            "time": "2013-08-30 09:13:05"
+            "time": "2013-09-02 16:24:34"
         },
         {
             "name": "bigfoot/import-bundle",
