@@ -803,12 +803,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/twig.js.git",
-                "reference": "0b0099de23a8fcbab25666586cf4911689ce09e2"
+                "reference": "d4fcd5b181f3e7bc380c7fed15692588269d29e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/twig.js/zipball/0b0099de23a8fcbab25666586cf4911689ce09e2",
-                "reference": "0b0099de23a8fcbab25666586cf4911689ce09e2",
+                "url": "https://api.github.com/repos/schmittjoh/twig.js/zipball/d4fcd5b181f3e7bc380c7fed15692588269d29e5",
+                "reference": "d4fcd5b181f3e7bc380c7fed15692588269d29e5",
                 "shasum": ""
             },
             "require": {
@@ -842,7 +842,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-08-26 09:51:14"
+            "time": "2013-08-30 13:20:57"
         },
         {
             "name": "jms/twig-js-bundle",
@@ -1203,16 +1203,16 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v5.0.1",
+            "version": "v5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "v5.0.1"
+                "reference": "f3917ecef35a4e4d98b303eb9fee463bc983f379"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/v5.0.1",
-                "reference": "v5.0.1",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/f3917ecef35a4e4d98b303eb9fee463bc983f379",
+                "reference": "f3917ecef35a4e4d98b303eb9fee463bc983f379",
                 "shasum": ""
             },
             "require": {
@@ -1248,7 +1248,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2013-06-17 13:32:32"
+            "time": "2013-08-30 12:35:21"
         },
         {
             "name": "symfony/assetic-bundle",

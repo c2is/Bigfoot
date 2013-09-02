@@ -38,17 +38,17 @@
     "scripts": {
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+            "Bigfoot\\Bundle\\CoreBundle\\Composer\\BigfootScriptHandler::buildBootstrap",
+            "Bigfoot\\Bundle\\CoreBundle\\Composer\\BigfootScriptHandler::clearCache",
+            "Bigfoot\\Bundle\\CoreBundle\\Composer\\BigfootScriptHandler::installAssets",
+            "Bigfoot\\Bundle\\CoreBundle\\Composer\\BigfootScriptHandler::installRequirementsFile"
         ],
         "post-update-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+            "Bigfoot\\Bundle\\CoreBundle\\Composer\\BigfootScriptHandler::buildBootstrap",
+            "Bigfoot\\Bundle\\CoreBundle\\Composer\\BigfootScriptHandler::clearCache",
+            "Bigfoot\\Bundle\\CoreBundle\\Composer\\BigfootScriptHandler::installAssets",
+            "Bigfoot\\Bundle\\CoreBundle\\Composer\\BigfootScriptHandler::installRequirementsFile"
         ]
     },
     "config": {
