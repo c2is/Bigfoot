@@ -7,6 +7,7 @@ script:
 #  - setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/cache/
 #  - setfacl -R -m u:www-data:rwx -m u:`whoami`:rwx app/logs/
 #  - setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/logs/
+  - mkdir web/uploads
   - chmod 777 app/cache app/logs web/uploads
   - app/console assetic:dump --env=prod
   - app/console assetic:dump --env=admin
