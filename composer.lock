@@ -165,12 +165,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootNavigationBundle.git",
-                "reference": "86c0451fc39fa348602ba2f281519aa3bf05fbbf"
+                "reference": "125ba91bce27e36e56269c3f5a7d9ce4ba86d379"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootNavigationBundle/zipball/86c0451fc39fa348602ba2f281519aa3bf05fbbf",
-                "reference": "86c0451fc39fa348602ba2f281519aa3bf05fbbf",
+                "url": "https://api.github.com/repos/c2is/BigfootNavigationBundle/zipball/125ba91bce27e36e56269c3f5a7d9ce4ba86d379",
+                "reference": "125ba91bce27e36e56269c3f5a7d9ce4ba86d379",
                 "shasum": ""
             },
             "require": {
@@ -193,7 +193,7 @@
                 }
             ],
             "description": "Bigfoot navigation bundle",
-            "time": "2013-09-06 14:28:00"
+            "time": "2013-09-06 15:34:11"
         },
         {
             "name": "bigfoot/seo-bundle",
