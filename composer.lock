@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "55f6dac2da95b770a64055748ce0bd39",
+    "hash": "ab6bffd1723ee4c63a4494d265ca5f77",
     "packages": [
         {
             "name": "bigfoot/context-bundle",
@@ -49,12 +49,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootCoreBundle.git",
-                "reference": "b77e3498100b3bfa535d0e63b9b93cfe6cb5143f"
+                "reference": "407f521778812b18ed44344ed3ca85de29f3fef8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/b77e3498100b3bfa535d0e63b9b93cfe6cb5143f",
-                "reference": "b77e3498100b3bfa535d0e63b9b93cfe6cb5143f",
+                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/407f521778812b18ed44344ed3ca85de29f3fef8",
+                "reference": "407f521778812b18ed44344ed3ca85de29f3fef8",
                 "shasum": ""
             },
             "require": {
@@ -78,7 +78,7 @@
                 }
             ],
             "description": "Bigfoot core bundle",
-            "time": "2013-09-02 16:24:34"
+            "time": "2013-09-06 13:18:03"
         },
         {
             "name": "bigfoot/import-bundle",
@@ -157,6 +157,43 @@
             ],
             "description": "Bigfoot media bundle",
             "time": "2013-08-08 09:01:24"
+        },
+        {
+            "name": "bigfoot/navigation-bundle",
+            "version": "dev-master",
+            "target-dir": "Bigfoot/Bundle/NavigationBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/c2is/BigfootNavigationBundle.git",
+                "reference": "8a7c8edb76f1353e080c3b506b71f4bd2c9bdaec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/c2is/BigfootNavigationBundle/zipball/8a7c8edb76f1353e080c3b506b71f4bd2c9bdaec",
+                "reference": "8a7c8edb76f1353e080c3b506b71f4bd2c9bdaec",
+                "shasum": ""
+            },
+            "require": {
+                "bigfoot/core-bundle": "dev-master"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Bigfoot\\Bundle\\NavigationBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guillaume Manen",
+                    "email": "g.manen@c2is.fr"
+                }
+            ],
+            "description": "Bigfoot navigation bundle",
+            "time": "2013-09-06 12:51:32"
         },
         {
             "name": "bigfoot/seo-bundle",
@@ -1869,6 +1906,7 @@
         "bigfoot/import-bundle": 20,
         "bigfoot/media-bundle": 20,
         "bigfoot/context-bundle": 20,
+        "bigfoot/navigation-bundle": 20,
         "doctrine/doctrine-fixtures-bundle": 20,
         "doctrine/data-fixtures": 20,
         "jms/twig-js": 20,

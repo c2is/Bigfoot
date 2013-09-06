@@ -98,6 +98,7 @@ doctrine:
                     BigfootImportBundle: ~
                     BigfootMediaBundle: ~
                     BigfootContextBundle: ~
+                    BigfootNavigationBundle: ~
                 filters:
                     softdeleteable:
                         class: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
