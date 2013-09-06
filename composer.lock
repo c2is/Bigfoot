@@ -49,12 +49,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootCoreBundle.git",
-                "reference": "407f521778812b18ed44344ed3ca85de29f3fef8"
+                "reference": "3c3c761b2cce76d262c924d2c8edc92d60eed8fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/407f521778812b18ed44344ed3ca85de29f3fef8",
-                "reference": "407f521778812b18ed44344ed3ca85de29f3fef8",
+                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/3c3c761b2cce76d262c924d2c8edc92d60eed8fc",
+                "reference": "3c3c761b2cce76d262c924d2c8edc92d60eed8fc",
                 "shasum": ""
             },
             "require": {
@@ -78,7 +78,7 @@
                 }
             ],
             "description": "Bigfoot core bundle",
-            "time": "2013-09-06 13:18:03"
+            "time": "2013-09-06 14:22:00"
         },
         {
             "name": "bigfoot/import-bundle",
@@ -165,12 +165,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootNavigationBundle.git",
-                "reference": "8a7c8edb76f1353e080c3b506b71f4bd2c9bdaec"
+                "reference": "86c0451fc39fa348602ba2f281519aa3bf05fbbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootNavigationBundle/zipball/8a7c8edb76f1353e080c3b506b71f4bd2c9bdaec",
-                "reference": "8a7c8edb76f1353e080c3b506b71f4bd2c9bdaec",
+                "url": "https://api.github.com/repos/c2is/BigfootNavigationBundle/zipball/86c0451fc39fa348602ba2f281519aa3bf05fbbf",
+                "reference": "86c0451fc39fa348602ba2f281519aa3bf05fbbf",
                 "shasum": ""
             },
             "require": {
@@ -193,7 +193,7 @@
                 }
             ],
             "description": "Bigfoot navigation bundle",
-            "time": "2013-09-06 12:51:32"
+            "time": "2013-09-06 14:28:00"
         },
         {
             "name": "bigfoot/seo-bundle",
@@ -533,16 +533,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineFixturesBundle.git",
-                "reference": "e018cf34f6c8642eba40ca44871fead97616922a"
+                "reference": "c811f96f0cf83b997e3a3ed037cac729bbe3e803"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/e018cf34f6c8642eba40ca44871fead97616922a",
-                "reference": "e018cf34f6c8642eba40ca44871fead97616922a",
+                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/c811f96f0cf83b997e3a3ed037cac729bbe3e803",
+                "reference": "c811f96f0cf83b997e3a3ed037cac729bbe3e803",
                 "shasum": ""
             },
             "require": {
-                "doctrine/data-fixtures": "*",
+                "doctrine/data-fixtures": "~1.0",
                 "doctrine/doctrine-bundle": "~1.0",
                 "php": ">=5.3.2",
                 "symfony/doctrine-bridge": "~2.1"
@@ -582,7 +582,7 @@
                 "Fixture",
                 "persistence"
             ],
-            "time": "2013-08-05 08:41:18"
+            "time": "2013-09-05 11:23:37"
         },
         {
             "name": "doctrine/orm",
@@ -660,12 +660,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/l3pp4rd/DoctrineExtensions.git",
-                "reference": "e4829eee5d249250dabedbd4af1a7d5e1fa5d58e"
+                "reference": "1114bf953a017a0912d327582ff72ee72fd60fad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/e4829eee5d249250dabedbd4af1a7d5e1fa5d58e",
-                "reference": "e4829eee5d249250dabedbd4af1a7d5e1fa5d58e",
+                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/1114bf953a017a0912d327582ff72ee72fd60fad",
+                "reference": "1114bf953a017a0912d327582ff72ee72fd60fad",
                 "shasum": ""
             },
             "require": {
@@ -732,7 +732,7 @@
                 "tree",
                 "uploadable"
             ],
-            "time": "2013-08-26 15:55:06"
+            "time": "2013-09-06 13:21:28"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1723,12 +1723,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atoum/atoum.git",
-                "reference": "89ff5d4d62cc51520247749cf4b3a9d82e07ec77"
+                "reference": "f50b8db6af060dbd50c487d889a4272865205273"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atoum/atoum/zipball/89ff5d4d62cc51520247749cf4b3a9d82e07ec77",
-                "reference": "89ff5d4d62cc51520247749cf4b3a9d82e07ec77",
+                "url": "https://api.github.com/repos/atoum/atoum/zipball/f50b8db6af060dbd50c487d889a4272865205273",
+                "reference": "f50b8db6af060dbd50c487d889a4272865205273",
                 "shasum": ""
             },
             "require": {
@@ -1789,7 +1789,7 @@
                 "test",
                 "unit testing"
             ],
-            "time": "2013-08-16 11:37:39"
+            "time": "2013-09-06 13:35:53"
         },
         {
             "name": "atoum/atoum-bundle",
