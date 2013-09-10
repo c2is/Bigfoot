@@ -24,6 +24,7 @@ class AppKernel extends Kernel
             new Bigfoot\Bundle\MediaBundle\BigfootMediaBundle(),
             new Bigfoot\Bundle\ContextBundle\BigfootContextBundle(),
             new Bigfoot\Bundle\NavigationBundle\BigfootNavigationBundle(),
+            new Bigfoot\Bundle\ContentBundle\BigfootContentBundle(),
             new JMS\TwigJsBundle\JMSTwigJsBundle(),
         );
 

@@ -8,6 +8,11 @@ bigfoot_media:
     type:     annotation
     prefix:   /admin
 
+bigfoot_content:
+    resource: "@BigfootContentBundle/Controller/"
+    type:     annotation
+    prefix:   /admin
+
 bigfoot_core:
     resource: "@BigfootCoreBundle/Controller/"
     type:     annotation
