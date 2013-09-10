@@ -1,14 +1,13 @@
 imports:
-    - { resource: config.yml }
+    - { resource: common.yml }
+    - { resource: menu_security.yml }
 
 assetic:
-    write_to: %kernel.root_dir%/../web/
     bundles: [ BigfootCoreBundle ]
 
 twig:
     form:
         resources:
-            - 'form_div_layout.html.twig'
             - 'BigfootCoreBundle:form:form_custom_layout.html.twig'
     globals:
         bigfoot_theme_values: %bigfoot.theme.values%

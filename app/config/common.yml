@@ -1,0 +1,132 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: doctrine_extensions.yml }
+    - { resource: security.yml }
+
+framework:
+    translator:      { fallback: %locale% }
+    secret:          %secret%
+    router:
+        strict_requirements: ~
+    form:            ~
+    csrf_protection: ~
+    validation:      { enable_annotations: true }
+    templating:
+        engines: ['twig']
+        #assets_version: SomeVersionScheme
+    default_locale:  "%locale%"
+    trusted_proxies: ~
+    session:         ~
+    fragments:       ~
+
+# Twig Configuration
+twig:
+    debug:            %kernel.debug%
+    strict_variables: %kernel.debug%
+    form:
+        resources:
+            - 'form_div_layout.html.twig'
+    globals:
+        locales:  %available_languages%
+        seo:      @bigfoot_seo.helper
+
+# Assetic Configuration
+assetic:
+    debug:          %kernel.debug%
+    use_controller: false
+    bundles: ~
+    #java: /usr/bin/java
+    filters:
+        cssrewrite: ~
+        #closure:
+        #    jar: %kernel.root_dir%/Resources/java/compiler.jar
+        #yui_css:
+        #    jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.7.jar
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        driver:   %database_driver%
+        host:     %database_host%
+        port:     %database_port%
+        dbname:   %database_name%
+        user:     %database_user%
+        password: %database_password%
+        charset:  UTF8
+        # if using pdo_sqlite as your database driver, add the path in parameters.yml
+        # e.g. database_path: %kernel.root_dir%/data/data.db3
+        # path:     %database_path%
+
+    orm:
+        default_entity_manager: bigfoot
+        auto_generate_proxy_classes: %kernel.debug%
+        entity_managers:
+            bigfoot:
+                connection: default
+                auto_mapping: false
+                naming_strategy: doctrine.orm.naming_strategy.underscore
+                mappings:
+                    gedmo_translatable:
+                        type: annotation
+                        prefix: Gedmo\Translatable\Entity
+                        dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity"
+                        alias: GedmoTranslatable # this one is optional and will default to the name set for the mapping
+                        is_bundle: false
+                    gedmo_translator:
+                        type: annotation
+                        prefix: Gedmo\Translator\Entity
+                        dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity"
+                        alias: GedmoTranslator # this one is optional and will default to the name set for the mapping
+                        is_bundle: false
+                    gedmo_loggable:
+                        type: annotation
+                        prefix: Gedmo\Loggable\Entity
+                        dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity"
+                        alias: GedmoLoggable # this one is optional and will default to the name set for the mapping
+                        is_bundle: false
+                    gedmo_tree:
+                        type: annotation
+                        prefix: Gedmo\Tree\Entity
+                        dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity"
+                        alias: GedmoTree # this one is optional and will default to the name set for the mapping
+                        is_bundle: false
+                    BigfootCoreBundle: ~
+                    BigfootUserBundle: ~
+                    BigfootSeoBundle: ~
+                    BigfootImportBundle: ~
+                    BigfootMediaBundle: ~
+                    BigfootContextBundle: ~
+                    BigfootNavigationBundle: ~
+                filters:
+                    softdeleteable:
+                        class: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
+                        enabled: true
+                dql:
+                    numeric_functions:
+                        point_str: Bigfoot\Bundle\CoreBundle\ORM\PointStr
+                        distance: Bigfoot\Bundle\CoreBundle\ORM\Distance
+
+# Swiftmailer Configuration
+swiftmailer:
+    transport: %mailer_transport%
+    host:      %mailer_host%
+    username:  %mailer_user%
+    password:  %mailer_password%
+    spool:     { type: memory }
+
+bigfoot_context:
+    entities:
+        - "Bigfoot\\"
+    contexts:
+        language:
+            loaders:
+                back: "bigfoot_language_loader"
+            values:
+                fr:
+                    label: "French"
+                    value: "fr"
+                en:
+                    label: "English"
+                    value: "en"
+            default_value: %locale%
+            label: "Language"
