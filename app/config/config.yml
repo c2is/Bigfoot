@@ -36,7 +36,7 @@ twig:
 assetic:
     debug:          %kernel.debug%
     use_controller: false
-    bundles: [ ]
+    bundles: [ BigfootContentBundle ]
     #java: /usr/bin/java
     filters:
         cssrewrite: ~
@@ -48,16 +48,6 @@ assetic:
 # Doctrine Configuration
 doctrine:
     dbal:
-        driver:   %database_driver%
-        host:     %database_host%
-        port:     %database_port%
-        dbname:   %database_name%
-        user:     %database_user%
-        password: %database_password%
-        charset:  UTF8
-        # if using pdo_sqlite as your database driver, add the path in parameters.yml
-        # e.g. database_path: %kernel.root_dir%/data/data.db3
-        # path:     %database_path%
 
     orm:
         default_entity_manager: bigfoot
@@ -99,6 +89,7 @@ doctrine:
                     BigfootMediaBundle: ~
                     BigfootContextBundle: ~
                     BigfootNavigationBundle: ~
+                    BigfootContentBundle: ~
                 filters:
                     softdeleteable:
                         class: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
@@ -132,3 +123,7 @@ bigfoot_context:
                     value: "en"
             default_value: %locale%
             label: "Language"
+bigfoot_content:
+    widgets:
+        widget_test: 'Bigfoot\Bundle\ContentBundle\Widget\WidgetTest'
+        widget_most_viewed_hotel: 'Bigfoot\Bundle\ContentBundle\Widget\WidgetMostViewedHotel'

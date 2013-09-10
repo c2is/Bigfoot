@@ -1,0 +1,75 @@
+{% extends bigfoot_theme_values.bundle~'::base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets '@BigfootContentBundle/Resources/public/css/*' filter='cssrewrite' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {% javascripts '@BigfootContentBundle/Resources/public/js/*' %}
+        <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
+
+{% block body %}
+    {{ parent() }}
+    <div id="widget_sc_container">
+        <div id="header_widget_sc_container">{{ 'Liste des Widgets et des Contenus statiques disponibles' }}</div>
+        <div id="body_widget_sc_container">
+            {% for widget in widgetList %}
+                <div class="widget_elt" data-name="{{ widget.name }}" data-type="widget" data-id="">
+                    <a href="#_">{{ widget.label }}</a>
+                </div>
+            {% endfor %}
+
+            {% for staticcontent in staticContentList %}
+                <div class="widget_elt" data-name="" data-type="staticcontent" data-id="{{ staticcontent.id }}">
+                    <a href="#_">{{ staticcontent.label }}</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div id="sidebar_container" data-src="{{ path('admin_dashboard') }}">
+        <div id="header_sidebar_container">{{ 'Liste des Sidebars disponibles' }}<a href="{{ path('admin_sidebar_new') }}"><span class="glyphicon glyphicon-file"></span></a></span></div>
+        <div id="body_sidebar_container">
+            {% for sidebar in sidebarList %}
+                <div class="sidebar_elt" id="sidebar_{{ sidebar.id_sidebar }}">
+                    <div class="header_sidebar_elt">
+                        <a href="#_" onclick="saveOrderBlock('{{ sidebar.id_sidebar }}');return false;"><span class="glyphicon glyphicon-magnet"></span></a>
+                        {{ sidebar.name }}
+                        <a href="{{ path('admin_sidebar_edit' , { 'id': sidebar.id_sidebar }) }}"><span class="glyphicon glyphicon-pencil"></span></a>
+                        <a href="{{ path('admin_sidebar_delete' , { 'id': sidebar.id_sidebar }) }}"><span class="glyphicon glyphicon-trash"></span></a>
+                    </div>
+                    <div class="body_sidebar_elt" id="body_sidebar_{{ sidebar.id_sidebar }}">
+                        {% for block in sidebar.formBlock %}
+
+                            {% if block.type == 'widget' %}
+                                {% set action_path = path('admin_widget_update', { 'id': block.id, 'form_name' : block.form_name }) %}
+                                {% set delete_path = path('admin_widget_delete', { 'id': block.id }) %}
+                            {% elseif block.type == 'staticcontent' %}
+                                {% set action_path = path('admin_staticcontent_update', { 'id': block.id }) %}
+                                {% set delete_path = path('admin_staticcontent_delete', { 'id': block.id }) %}
+                            {% endif %}
+
+
+                            {% include 'BigfootContentBundle:Form:dynamicalform.twig.html' with {
+                            'form': block.form,
+                            'currentSidebar': sidebar.id_sidebar,
+                            'action_path' : action_path,
+                            'delete_path' : delete_path,
+                            'method' : 'PUT',
+                            'block_id' : block.id,
+                            'block_type' : block.type,
+                            } %}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
