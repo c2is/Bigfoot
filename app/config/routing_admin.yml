@@ -31,7 +31,7 @@ bigfoot_import:
 bigfoot_navigation:
     resource: "@BigfootNavigationBundle/Controller/"
     type:     annotation
-    prefix:   /admin
+    prefix:   /
 
 _main:
     resource: routing.yml
