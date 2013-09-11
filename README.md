@@ -45,7 +45,21 @@ On Macosx rather do this way
 Usage
 -----
 
-The administration interface is then available at /admin.
+The Bigfoot administration interface is accessed in its specific environment named admin. It means the entry point is the admin.php file (or admin_dev.php for the debug mode), and the configuration is handled in the _admin suffixed files.
+The configuration setup looks like :
+
+- app
+    - config
+        - common.yml : contains configuration options used by both the front and back offices
+        - config.yml : contains configuration options for the front office
+        - config_admin.yml : contains configuration options for the back office
+        - routing.yml : contains routing configuration for both the front office and back office
+        - routing_admin.yml : contains routing configuration for the front office
+
+Default configuration only includes the administration interface routes in the admin environment.
+The administration interface is then available at :
+
+    http://localhost/admin(_dev).php/admin/
 
 Bigfoot comes with the SEO and User plugins.
 By default, an authentication is required to access (if you loaded the bundled fixtures, you can use the admin / admin account).
