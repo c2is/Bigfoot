@@ -74,7 +74,8 @@ Assetic
 -------
 
 Bigfoot assets are loaded via Assetic and are gitignored. To have the admin interface display properly in the production environment, you first must dump the assets with :
-
+    
+    ./app/console assets:install --env=prod
     ./app/console assetic:dump --env=prod
     
 Documentation
