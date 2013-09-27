@@ -1,7 +1,6 @@
 imports:
     - { resource: parameters.yml }
     - { resource: doctrine_extensions.yml }
-    - { resource: security.yml }
 
 framework:
     translator:      { fallback: %locale% }
@@ -90,13 +89,8 @@ doctrine:
                         dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity"
                         alias: GedmoTree # this one is optional and will default to the name set for the mapping
                         is_bundle: false
-                    BigfootCoreBundle: ~
-                    BigfootUserBundle: ~
-                    BigfootSeoBundle: ~
-                    BigfootImportBundle: ~
-                    BigfootMediaBundle: ~
                     BigfootContextBundle: ~
-                    BigfootNavigationBundle: ~
+                    BigfootCoreBundle: ~
                 filters:
                     softdeleteable:
                         class: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter

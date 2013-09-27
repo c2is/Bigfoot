@@ -26,3 +26,6 @@ monolog:
 
 assetic:
     use_controller: true
+
+atoum:
+    bundles:

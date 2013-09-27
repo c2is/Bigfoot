@@ -17,15 +17,18 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-            new Bigfoot\Bundle\CoreBundle\BigfootCoreBundle(),
-            new Bigfoot\Bundle\UserBundle\BigfootUserBundle(),
-            new Bigfoot\Bundle\SeoBundle\BigfootSeoBundle(),
-            new Bigfoot\Bundle\ImportBundle\BigfootImportBundle(),
-            new Bigfoot\Bundle\MediaBundle\BigfootMediaBundle(),
             new Bigfoot\Bundle\ContextBundle\BigfootContextBundle(),
-            new Bigfoot\Bundle\NavigationBundle\BigfootNavigationBundle(),
+            new Bigfoot\Bundle\SeoBundle\BigfootSeoBundle(),
+            new Bigfoot\Bundle\CoreBundle\BigfootCoreBundle(),
             new JMS\TwigJsBundle\JMSTwigJsBundle(),
         );
+
+        if (in_array($this->getEnvironment(), array('admin', 'admin_dev'))) {
+            $bundles[] = new Bigfoot\Bundle\NavigationBundle\BigfootNavigationBundle();
+            $bundles[] = new Bigfoot\Bundle\MediaBundle\BigfootMediaBundle();
+            $bundles[] = new Bigfoot\Bundle\ImportBundle\BigfootImportBundle();
+            $bundles[] = new Bigfoot\Bundle\UserBundle\BigfootUserBundle();
+        }
 
         if (in_array($this->getEnvironment(), array('dev', 'test', 'admin_dev'))) {
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
