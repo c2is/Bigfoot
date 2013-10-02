@@ -18,14 +18,3 @@ twig:
 framework:
     router:
         resource: "%kernel.root_dir%/config/routing_admin.yml"
-
-doctrine:
-    orm:
-        entity_managers:
-            bigfoot:
-                mappings:
-                    BigfootUserBundle: ~
-                    BigfootSeoBundle: ~
-                    BigfootImportBundle: ~
-                    BigfootMediaBundle: ~
-                    BigfootNavigationBundle: ~

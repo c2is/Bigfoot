@@ -91,6 +91,11 @@ doctrine:
                         is_bundle: false
                     BigfootContextBundle: ~
                     BigfootCoreBundle: ~
+                    BigfootUserBundle: ~
+                    BigfootSeoBundle: ~
+                    BigfootImportBundle: ~
+                    BigfootMediaBundle: ~
+                    BigfootNavigationBundle: ~
                 filters:
                     softdeleteable:
                         class: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
