@@ -4,7 +4,7 @@ imports:
     - { resource: menu_security.yml }
 
 assetic:
-    bundles: [ BigfootCoreBundle ]
+    bundles: [ %bigfoot.theme.bundle% ]
 
 twig:
     form:
@@ -12,6 +12,7 @@ twig:
             - 'BigfootCoreBundle:form:form_custom_layout.html.twig'
     globals:
         bigfoot_theme_values: %bigfoot.theme.values%
+        bigfoot_theme_bundle: %bigfoot.theme.bundle%
         theme: @bigfoot.theme
 
 framework:
