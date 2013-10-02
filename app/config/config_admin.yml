@@ -1,6 +1,5 @@
 imports:
     - { resource: common.yml }
-    - { resource: security.yml }
     - { resource: menu_security.yml }
 
 assetic:

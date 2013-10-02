@@ -21,14 +21,13 @@ class AppKernel extends Kernel
             new Bigfoot\Bundle\SeoBundle\BigfootSeoBundle(),
             new Bigfoot\Bundle\CoreBundle\BigfootCoreBundle(),
             new JMS\TwigJsBundle\JMSTwigJsBundle(),
+            new Bigfoot\Bundle\NavigationBundle\BigfootNavigationBundle(),
+            new Bigfoot\Bundle\MediaBundle\BigfootMediaBundle(),
+            new Bigfoot\Bundle\ImportBundle\BigfootImportBundle(),
+            new Bigfoot\Bundle\UserBundle\BigfootUserBundle(),
         );
 
-        if (in_array($this->getEnvironment(), array('admin', 'admin_dev'))) {
-            $bundles[] = new Bigfoot\Bundle\NavigationBundle\BigfootNavigationBundle();
-            $bundles[] = new Bigfoot\Bundle\MediaBundle\BigfootMediaBundle();
-            $bundles[] = new Bigfoot\Bundle\ImportBundle\BigfootImportBundle();
-            $bundles[] = new Bigfoot\Bundle\UserBundle\BigfootUserBundle();
-        }
+        if (in_array($this->getEnvironment(), array('admin', 'admin_dev'))) { }
 
         if (in_array($this->getEnvironment(), array('dev', 'test', 'admin_dev'))) {
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();

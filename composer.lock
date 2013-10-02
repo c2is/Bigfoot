@@ -87,12 +87,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootImportBundle.git",
-                "reference": "bdceb7e1a30cec02015f07d98013e03771f21d8f"
+                "reference": "a3bea0d35c84137277ca9a0458512fe8733fcf8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootImportBundle/zipball/bdceb7e1a30cec02015f07d98013e03771f21d8f",
-                "reference": "bdceb7e1a30cec02015f07d98013e03771f21d8f",
+                "url": "https://api.github.com/repos/c2is/BigfootImportBundle/zipball/a3bea0d35c84137277ca9a0458512fe8733fcf8e",
+                "reference": "a3bea0d35c84137277ca9a0458512fe8733fcf8e",
                 "shasum": ""
             },
             "require": {
@@ -119,7 +119,7 @@
                 }
             ],
             "description": "Bigfoot import bundle",
-            "time": "2013-10-02 09:58:35"
+            "time": "2013-10-02 16:15:07"
         },
         {
             "name": "bigfoot/media-bundle",
@@ -202,12 +202,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootSeoBundle.git",
-                "reference": "fb28287da413898fd6a4540e2432df8f05a520d4"
+                "reference": "7ff6245b0dec5abf41e57792700f5f900de31b1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootSeoBundle/zipball/fb28287da413898fd6a4540e2432df8f05a520d4",
-                "reference": "fb28287da413898fd6a4540e2432df8f05a520d4",
+                "url": "https://api.github.com/repos/c2is/BigfootSeoBundle/zipball/7ff6245b0dec5abf41e57792700f5f900de31b1f",
+                "reference": "7ff6245b0dec5abf41e57792700f5f900de31b1f",
                 "shasum": ""
             },
             "require": {
@@ -230,7 +230,7 @@
                 }
             ],
             "description": "Bigfoot seo bundle",
-            "time": "2013-10-02 13:14:04"
+            "time": "2013-10-02 16:14:46"
         },
         {
             "name": "bigfoot/user-bundle",
