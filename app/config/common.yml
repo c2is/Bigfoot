@@ -110,9 +110,9 @@ doctrine:
 swiftmailer:
     transport: %mailer_transport%
     host:      %mailer_host%
+    port:      %mailer_port%
     username:  %mailer_user%
     password:  %mailer_password%
-    spool:     { type: memory }
 
 bigfoot_context:
     entities:
