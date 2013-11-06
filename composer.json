@@ -27,6 +27,7 @@
         "bigfoot/media-bundle":                 "dev-master",
         "bigfoot/context-bundle":               "dev-master",
         "bigfoot/navigation-bundle":            "dev-master",
+        "bigfoot/content-bundle":               "dev-master",
         "doctrine/doctrine-fixtures-bundle":    "dev-master",
         "doctrine/data-fixtures":               "dev-master",
         "jms/twig-js":                          "dev-master",

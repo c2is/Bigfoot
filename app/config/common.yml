@@ -97,6 +97,7 @@ doctrine:
                     BigfootImportBundle: ~
                     BigfootMediaBundle: ~
                     BigfootNavigationBundle: ~
+                    BigfootContentBundle: ~
                 filters:
                     softdeleteable:
                         class: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
@@ -130,3 +131,6 @@ bigfoot_context:
                     value: "en"
             default_value: %locale%
             label: "Language"
+
+bigfoot_content:
+    widgets:

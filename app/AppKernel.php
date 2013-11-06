@@ -25,6 +25,7 @@ class AppKernel extends Kernel
             new Bigfoot\Bundle\MediaBundle\BigfootMediaBundle(),
             new Bigfoot\Bundle\ImportBundle\BigfootImportBundle(),
             new Bigfoot\Bundle\UserBundle\BigfootUserBundle(),
+            new Bigfoot\Bundle\ContentBundle\BigfootContentBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('admin', 'admin_dev'))) { }

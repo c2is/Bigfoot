@@ -3,8 +3,45 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "809805c142ed4512b362fa37658fda3d",
+    "hash": "52f9cfdd4ff33472fe8b07aab7c839c3",
     "packages": [
+        {
+            "name": "bigfoot/content-bundle",
+            "version": "dev-master",
+            "target-dir": "Bigfoot/Bundle/ContentBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/c2is/BigfootContentBundle.git",
+                "reference": "7a549129a57bb42752d32a52a0c5e13191eaf622"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/c2is/BigfootContentBundle/zipball/7a549129a57bb42752d32a52a0c5e13191eaf622",
+                "reference": "7a549129a57bb42752d32a52a0c5e13191eaf622",
+                "shasum": ""
+            },
+            "require": {
+                "bigfoot/core-bundle": "dev-master"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Bigfoot\\Bundle\\ContentBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "S.Huot",
+                    "email": "s.huot@c2is.fr"
+                }
+            ],
+            "description": "Bigfoot Content bundle",
+            "time": "2013-11-06 14:29:13"
+        },
         {
             "name": "bigfoot/context-bundle",
             "version": "dev-master",
@@ -12,12 +49,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootContextBundle.git",
-                "reference": "ac0e40f0892b3b9b4c4de18a08f45e122b1a7c9c"
+                "reference": "cfbabebf26722223b75ff5d5cd02c4fb5722d917"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootContextBundle/zipball/ac0e40f0892b3b9b4c4de18a08f45e122b1a7c9c",
-                "reference": "ac0e40f0892b3b9b4c4de18a08f45e122b1a7c9c",
+                "url": "https://api.github.com/repos/c2is/BigfootContextBundle/zipball/cfbabebf26722223b75ff5d5cd02c4fb5722d917",
+                "reference": "cfbabebf26722223b75ff5d5cd02c4fb5722d917",
                 "shasum": ""
             },
             "require": {
@@ -40,7 +77,7 @@
                 }
             ],
             "description": "Bigfoot context bundle",
-            "time": "2013-10-02 12:40:20"
+            "time": "2013-11-06 13:34:12"
         },
         {
             "name": "bigfoot/core-bundle",
@@ -49,12 +86,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootCoreBundle.git",
-                "reference": "d595c2c582163a3029715a2d945c464e6233a933"
+                "reference": "f79f5859f26cd4c5c129a8e67d937c2a17e4f6c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/d595c2c582163a3029715a2d945c464e6233a933",
-                "reference": "d595c2c582163a3029715a2d945c464e6233a933",
+                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/f79f5859f26cd4c5c129a8e67d937c2a17e4f6c2",
+                "reference": "f79f5859f26cd4c5c129a8e67d937c2a17e4f6c2",
                 "shasum": ""
             },
             "require": {
@@ -78,7 +115,7 @@
                 }
             ],
             "description": "Bigfoot core bundle",
-            "time": "2013-10-02 13:29:08"
+            "time": "2013-11-06 13:36:18"
         },
         {
             "name": "bigfoot/import-bundle",
@@ -87,12 +124,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootImportBundle.git",
-                "reference": "a3bea0d35c84137277ca9a0458512fe8733fcf8e"
+                "reference": "35502eb5d1f06719032679a8cc741e3aae1539d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootImportBundle/zipball/a3bea0d35c84137277ca9a0458512fe8733fcf8e",
-                "reference": "a3bea0d35c84137277ca9a0458512fe8733fcf8e",
+                "url": "https://api.github.com/repos/c2is/BigfootImportBundle/zipball/35502eb5d1f06719032679a8cc741e3aae1539d4",
+                "reference": "35502eb5d1f06719032679a8cc741e3aae1539d4",
                 "shasum": ""
             },
             "require": {
@@ -119,7 +156,7 @@
                 }
             ],
             "description": "Bigfoot import bundle",
-            "time": "2013-10-02 16:15:07"
+            "time": "2013-11-06 13:37:00"
         },
         {
             "name": "bigfoot/media-bundle",
@@ -128,12 +165,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootMediaBundle.git",
-                "reference": "de6fe1dc20f96d42da6400bfbeb72e2efda5ddde"
+                "reference": "3bf602a6f9cb4a55a05332acde08cc03b95089a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootMediaBundle/zipball/de6fe1dc20f96d42da6400bfbeb72e2efda5ddde",
-                "reference": "de6fe1dc20f96d42da6400bfbeb72e2efda5ddde",
+                "url": "https://api.github.com/repos/c2is/BigfootMediaBundle/zipball/3bf602a6f9cb4a55a05332acde08cc03b95089a0",
+                "reference": "3bf602a6f9cb4a55a05332acde08cc03b95089a0",
                 "shasum": ""
             },
             "require": {
@@ -156,7 +193,7 @@
                 }
             ],
             "description": "Bigfoot media bundle",
-            "time": "2013-10-02 12:40:02"
+            "time": "2013-11-06 13:40:47"
         },
         {
             "name": "bigfoot/navigation-bundle",
@@ -165,12 +202,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootNavigationBundle.git",
-                "reference": "2cf573cade5f3734770aacfdc46a49996627dbf3"
+                "reference": "4434d4390454f4c35a0431be2d930867783c3347"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootNavigationBundle/zipball/2cf573cade5f3734770aacfdc46a49996627dbf3",
-                "reference": "2cf573cade5f3734770aacfdc46a49996627dbf3",
+                "url": "https://api.github.com/repos/c2is/BigfootNavigationBundle/zipball/4434d4390454f4c35a0431be2d930867783c3347",
+                "reference": "4434d4390454f4c35a0431be2d930867783c3347",
                 "shasum": ""
             },
             "require": {
@@ -193,7 +230,7 @@
                 }
             ],
             "description": "Bigfoot navigation bundle",
-            "time": "2013-10-02 13:11:56"
+            "time": "2013-11-06 14:47:01"
         },
         {
             "name": "bigfoot/seo-bundle",
@@ -202,12 +239,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootSeoBundle.git",
-                "reference": "7ff6245b0dec5abf41e57792700f5f900de31b1f"
+                "reference": "1d51c40e76578ddbd5be24afa6932e1352b792a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootSeoBundle/zipball/7ff6245b0dec5abf41e57792700f5f900de31b1f",
-                "reference": "7ff6245b0dec5abf41e57792700f5f900de31b1f",
+                "url": "https://api.github.com/repos/c2is/BigfootSeoBundle/zipball/1d51c40e76578ddbd5be24afa6932e1352b792a1",
+                "reference": "1d51c40e76578ddbd5be24afa6932e1352b792a1",
                 "shasum": ""
             },
             "require": {
@@ -230,7 +267,7 @@
                 }
             ],
             "description": "Bigfoot seo bundle",
-            "time": "2013-10-02 16:14:46"
+            "time": "2013-11-06 13:42:28"
         },
         {
             "name": "bigfoot/user-bundle",
@@ -239,12 +276,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootUserBundle.git",
-                "reference": "a8499356f717a6017c8f5508eb53f1ec58fd9ce8"
+                "reference": "7b2ee11461e391db91d3b21cc092ca85b58d56bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootUserBundle/zipball/a8499356f717a6017c8f5508eb53f1ec58fd9ce8",
-                "reference": "a8499356f717a6017c8f5508eb53f1ec58fd9ce8",
+                "url": "https://api.github.com/repos/c2is/BigfootUserBundle/zipball/7b2ee11461e391db91d3b21cc092ca85b58d56bd",
+                "reference": "7b2ee11461e391db91d3b21cc092ca85b58d56bd",
                 "shasum": ""
             },
             "require": {
@@ -267,7 +304,7 @@
                 }
             ],
             "description": "Bigfoot user bundle",
-            "time": "2013-10-02 12:39:31"
+            "time": "2013-11-06 14:57:05"
         },
         {
             "name": "doctrine/annotations",
@@ -2246,6 +2283,7 @@
         "bigfoot/media-bundle": 20,
         "bigfoot/context-bundle": 20,
         "bigfoot/navigation-bundle": 20,
+        "bigfoot/content-bundle": 20,
         "doctrine/doctrine-fixtures-bundle": 20,
         "doctrine/data-fixtures": 20,
         "jms/twig-js": 20,
