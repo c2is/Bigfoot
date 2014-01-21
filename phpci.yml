@@ -5,7 +5,7 @@ setup:
         command: "%buildpath%app/console -n doctrine:database:create; %buildpath%app/console -n doctrine:schema:update --force; %buildpath%app/console -n doctrine:fixtures:load; %buildpath%app/console -n bigfoot:theme:install --symlink;%buildpath%app/console -n assetic:dump --env=admin"
 test:
     shell:
-        command: "rm -rf %buildpath%app/cache/test;chown -R www-data:www-data %buildpath%app/cache;;chown -R www-data:www-data %buildpath%app/logs"
+        command: "chown -R www-data:www-data %buildpath%app/cache;chown -R www-data:www-data %buildpath%app/logs"
     behat:
         executable: "bin/behat"
 success:
