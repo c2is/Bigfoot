@@ -10,6 +10,17 @@ class InheritedFeatureContext extends Behat\MinkExtension\Context\MinkContext
 
         $this->setMinkParameter('base_url', $baseUrl);
     }
+
+    /**
+     * @Then /^I wait for element "([^"]*)" to appear$/
+     */
+    public function iWaitForElementToAppear($element)
+    {
+        $this->getSession()->wait(5000,
+            "$('input[name=".$element."]').length > 0"
+        );
+    }
+
     /**
      * @Given /^I select the "([^"]*)" radio button with value "([^"]*)"$/
      */
@@ -18,7 +29,7 @@ class InheritedFeatureContext extends Behat\MinkExtension\Context\MinkContext
         $radio_button = $this->getSession()->getPage()->findField($radio);
         if (null === $radio_button) {
             throw new ElementNotFoundException(
-                $this->getSession(), 'form field', 'id|name|label|value', $field
+                $this->getSession(), 'form field', 'id|name|label|value', $radio
             );
         }
         $radio_button->selectOption($value);

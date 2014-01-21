@@ -6,7 +6,7 @@ Feature: Back Office Login
   Scenario: Give the default login user and pass
     Given I am on "/admin.php/admin/login"
     Then print current URL
-    And I wait "2000"
+    And I wait for element "_username" to appear
     Then I fill in "_username" with "admin"
     And I fill in "_password" with "admin"
     Then I press "Login"
