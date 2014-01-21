@@ -2,10 +2,10 @@ setup:
     composer:
         action: "install -n"
     shell:
-        command: "%buildpath%app/console doctrine:database:create; %buildpath%app/console doctrine:schema:update --force; %buildpath%app/console doctrine:fixtures:load; %buildpath%app/console bigfoot:theme:install --symlink;%buildpath%app/console assetic:dump --env=admin"
+        command: "%buildpath%app/console -n doctrine:database:create; %buildpath%app/console -n doctrine:schema:update --force; %buildpath%app/console -n doctrine:fixtures:load; %buildpath%app/console -n bigfoot:theme:install --symlink;%buildpath%app/console -n assetic:dump --env=admin"
 test:
     shell:
-        command: "rm -rf %buildpath%app/cache/test;chown -R www-data:www-data %buildpath%app/cache;"
+        command: "rm -rf %buildpath%app/cache/test;chown -R www-data:www-data %buildpath%app/cache;;chown -R www-data:www-data %buildpath%app/logs"
     behat:
         executable: "bin/behat"
 success:
