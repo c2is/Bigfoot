@@ -2,7 +2,7 @@ setup:
     composer:
         action: "install -n"
     shell:
-        command: "%buildpath%app/console doctrine:database:create; %buildpath%app/console doctrine:schema:update --force; %buildpath%app/console doctrine:fixtures:load"
+        command: "%buildpath%app/console doctrine:database:create; %buildpath%app/console doctrine:schema:update --force; %buildpath%app/console doctrine:fixtures:load; %buildpath%app/console bigfoot:theme:install --symlink;%buildpath%app/console assetic:dump --env=admin"
 test:
     shell:
         command: "rm -rf %buildpath%app/cache/test;chown -R www-data:www-data %buildpath%app/cache;"
