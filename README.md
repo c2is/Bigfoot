@@ -1,4 +1,4 @@
-Bigfoot
+Bigfoot ![Build Status](http://phpci.c2is.fr/assets/img/bigfoot.png)
 =======
 
 The Bigfoot administration interface.
