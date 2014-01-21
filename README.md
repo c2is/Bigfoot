@@ -73,9 +73,15 @@ You can comment the content of the app/Resources/config/security.yml file to dis
 Assetic
 -------
 
-Bigfoot assets are loaded via Assetic and are gitignored. To have the admin interface display properly, you first must dump the assets with :
+Bigfoot assets are not in the usual public/ directory under Resources/ ; they are not installed properly with an assets:install. To install the administration interface assets, please use :
+
+    ./app/console bigfoot:theme:install (--symlink)
+
+This command installs bigfoot assets and also executes the usual assets:install command.
+
+Bigfoot assets are loaded via Assetic and are gitignored. To have the admin interface display properly in production environment, you first must dump the assets with :
     
-    ./app/console bigfoot:theme:install
+    ./app/console assetic:dump --env=admin
     
 Documentation
 -------
