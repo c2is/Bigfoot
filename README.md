@@ -77,7 +77,7 @@ Bigfoot assets are not in the usual public/ directory under Resources/ ; they ar
 
     ./app/console bigfoot:theme:install (--symlink)
 
-This command installs bigfoot assets and also executes the usual assets:install command.
+This command installs bigfoot assets and also executes the usual assets:install command. If executed with the symlink option, assets will be installed via a symbolic link (instead of hard copy), which is recommended during development (no need to assets:install everytime a css / js file is changed).
 
 Bigfoot assets are loaded via Assetic and are gitignored. To have the admin interface display properly in production environment, you first must dump the assets with :
     
