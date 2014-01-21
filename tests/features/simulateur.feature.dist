@@ -1,0 +1,39 @@
+Feature: Simulateur
+  In order to buy a ticket
+  As a website user
+  A correct form has to be displayed
+
+  @javascript
+  Scenario: Select a product with "activation immediate" and login
+    Given I am on "/simulateur"
+    Then print current URL
+    Then I should see "SENIOR"
+    And  I select "1" from "simulateur[tranches][0][quantity]"
+    Then I evaluate script "$('#simulateurForm').submit();return false;"
+    Then I should see "Votre sélection"
+    Given I select the "forfait_tarif[31a0ce2c-210f-5846-e5a4-2b4658b6d0c1]" radio button with value "db12b369-77a3-3da0-77f1-cc3293518c11_7e62ed8e-45c4-5311-cc35-350c13a28a6f_213"
+    Given I check "mode_livraison_2"
+    Then I press "Valider"
+    And I wait "2000"
+    And I fill in "_username" with "serrechevalierforfait@c2is.fr"
+    And I fill in "_password" with "ClientTest"
+    Then I evaluate script "$('#loginForm').submit();return false;"
+    And I wait "2000"
+    Then I should see "Créditer"
+  @javascript
+  Scenario: Select a product with "activation ulterieure" and login
+    Given I am on "/simulateur"
+    Then print current URL
+    Then I should see "SENIOR"
+    And  I select "1" from "simulateur[tranches][0][quantity]"
+    Then I evaluate script "$('#simulateurForm').submit();return false;"
+    Then I should see "Votre sélection"
+    Given I select the "forfait_tarif[31a0ce2c-210f-5846-e5a4-2b4658b6d0c1]" radio button with value "db12b369-77a3-3da0-77f1-cc3293518c11_7e62ed8e-45c4-5311-cc35-350c13a28a6f_213"
+    Given I check "mode_livraison_3"
+    Then I press "Valider"
+    And I wait "2000"
+    And I fill in "_username" with "serrechevalierforfait@c2is.fr"
+    And I fill in "_password" with "ClientTest"
+    Then I evaluate script "$('#loginForm').submit();return false;"
+    And I wait "2000"
+    Then I should see "Récapitulatif"

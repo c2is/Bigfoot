@@ -1,0 +1,14 @@
+@basic
+Feature: Home
+  In order to browse the site
+  As a website user/crawler
+  I need to be able to access and see basic elements
+
+  Scenario: See some basic elements
+    Given I am on "/"
+    Then the response status code should be between "200" "399"
+    Then the response should contains at least "1000" characters
+    Then the response should not contain "noindex"
+    Then the response should not contain "nofollow"
+    Then the response should contain regexp "<head.*[_a-zA-Z0-9]+\.css.*</head>"
+    Then the response should contain regexp "<head.*[_a-zA-Z0-9]+\.js.*</head>"
