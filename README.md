@@ -40,6 +40,8 @@ Set permissions on cache and logs directories
 On Macosx rather do this way
 
     sudo chmod -R +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" app/cache/
+    sudo chmod -R +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" app/logs/
+    sudo chmod -R +a "_www allow delete,write,append,file_inherit,directory_inherit" app/cache/
     sudo chmod -R +a "_www allow delete,write,append,file_inherit,directory_inherit" app/logs/
 
 Usage
