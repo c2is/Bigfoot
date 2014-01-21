@@ -1,0 +1,19 @@
+default:
+  paths:
+    features: tests/features
+  context:
+    class:  'InheritedFeatureContext'
+  extensions:
+    Behat\MinkExtension\Extension:
+      base_url:  'http://phpcibuilds.c2is.fr/{PHPCI_BUILD_PATH}/web/'
+      # to test locally give your ip and path, the url have to be reachable from the phpci server :
+      # base_url:  'http://10.63.1.137/Bigfoot/web/'
+      goutte: ~
+      selenium2:
+        wd_host: 'http://10.63.1.22:4444/wd/hub'
+# No context:
+no_context:
+  paths:
+    bootstrap: 'NON_EXISTING_FOLDER'
+  filters:
+    tags:      '~@javascript'
