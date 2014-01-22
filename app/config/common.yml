@@ -134,3 +134,7 @@ bigfoot_context:
 
 bigfoot_content:
     widgets:
+    
+bigfoot_core:
+    mailer:
+        from: bigfoot@c2is.fr

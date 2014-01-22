@@ -1,4 +1,4 @@
-Bigfoot
+Bigfoot ![Build Status](http://phpci.c2is.fr/assets/img/bigfoot.png)
 =======
 
 The Bigfoot administration interface.
@@ -40,6 +40,8 @@ Set permissions on cache and logs directories
 On Macosx rather do this way
 
     sudo chmod -R +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" app/cache/
+    sudo chmod -R +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" app/logs/
+    sudo chmod -R +a "_www allow delete,write,append,file_inherit,directory_inherit" app/cache/
     sudo chmod -R +a "_www allow delete,write,append,file_inherit,directory_inherit" app/logs/
 
 Usage
@@ -73,9 +75,15 @@ You can comment the content of the app/Resources/config/security.yml file to dis
 Assetic
 -------
 
-Bigfoot assets are loaded via Assetic and are gitignored. To have the admin interface display properly, you first must dump the assets with :
+Bigfoot assets are not in the usual public/ directory under Resources/ ; they are not installed properly with an assets:install. To install the administration interface assets, please use :
+
+    ./app/console bigfoot:theme:install (--symlink)
+
+This command installs bigfoot assets and also executes the usual assets:install command. If executed with the symlink option, assets will be installed via a symbolic link (instead of hard copy), which is recommended during development (no need to assets:install everytime a css / js file is changed).
+
+Bigfoot assets are loaded via Assetic and are gitignored. To have the admin interface display properly in production environment, you first must dump the assets with :
     
-    ./app/console bigfoot:theme:install
+    ./app/console assetic:dump --env=admin
     
 Documentation
 -------
