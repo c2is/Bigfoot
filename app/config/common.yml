@@ -138,3 +138,7 @@ bigfoot_content:
 bigfoot_core:
     mailer:
         from: bigfoot@c2is.fr
+
+bigfoot_user:
+    resetting:
+        token_ttl: 1800
