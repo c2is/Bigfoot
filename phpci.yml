@@ -14,6 +14,9 @@ success:
 failure:
     shell:
         command: "cp /var/www/PHPCI/public/assets/img/build-failed.png /var/www/PHPCI/public/assets/img/bigfoot.png"
+    email:
+        addresses:
+            - bigfoot@c2is.fr
 complete:
     shell:
         command: "%buildpath%app/console doctrine:database:drop --force"
