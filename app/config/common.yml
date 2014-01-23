@@ -151,3 +151,6 @@ stof_doctrine_extensions:
             translatable:   true
             softdeleteable: true
             sortable:       true
+
+parameters:
+   preview: []
