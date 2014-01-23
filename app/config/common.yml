@@ -1,6 +1,5 @@
 imports:
     - { resource: parameters.yml }
-    - { resource: doctrine_extensions.yml }
     - { resource: security.yml }
 
 framework:
@@ -142,3 +141,12 @@ bigfoot_core:
 bigfoot_user:
     resetting:
         token_ttl: 1800
+
+stof_doctrine_extensions:
+    default_locale: en
+    orm:
+        default:
+            timestampable:  true
+            blameable:      true
+            translatable:   true
+            softdeleteable: true

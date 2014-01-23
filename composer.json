@@ -20,6 +20,7 @@
         "sensio/framework-extra-bundle":        "2.3.*",
         "sensio/generator-bundle":              "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
+        "stof/doctrine-extensions-bundle":      "~1.0",
         "bigfoot/core-bundle":                  "dev-master",
         "bigfoot/user-bundle":                  "dev-master",
         "bigfoot/seo-bundle":                   "dev-master",
