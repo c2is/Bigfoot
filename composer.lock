@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootContentBundle.git",
-                "reference": "db3c3bf5a09755c9d85165546ca008359e56fab0"
+                "reference": "be41ee06744c1823985ebd5d409825cc5227ccac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootContentBundle/zipball/db3c3bf5a09755c9d85165546ca008359e56fab0",
-                "reference": "db3c3bf5a09755c9d85165546ca008359e56fab0",
+                "url": "https://api.github.com/repos/c2is/BigfootContentBundle/zipball/be41ee06744c1823985ebd5d409825cc5227ccac",
+                "reference": "be41ee06744c1823985ebd5d409825cc5227ccac",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
                 }
             ],
             "description": "Bigfoot Content bundle",
-            "time": "2014-01-22 11:35:16"
+            "time": "2014-01-23 09:32:55"
         },
         {
             "name": "bigfoot/context-bundle",
@@ -311,12 +311,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootUserBundle.git",
-                "reference": "7e7aa833613e9238b0f4bafa88dadf57288dd81f"
+                "reference": "c2af47eccf28e74fc21a22a30024533fe519bc17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootUserBundle/zipball/7e7aa833613e9238b0f4bafa88dadf57288dd81f",
-                "reference": "7e7aa833613e9238b0f4bafa88dadf57288dd81f",
+                "url": "https://api.github.com/repos/c2is/BigfootUserBundle/zipball/c2af47eccf28e74fc21a22a30024533fe519bc17",
+                "reference": "c2af47eccf28e74fc21a22a30024533fe519bc17",
                 "shasum": ""
             },
             "require": {
@@ -344,7 +344,7 @@
                 }
             ],
             "description": "Bigfoot user bundle",
-            "time": "2014-01-22 08:39:27"
+            "time": "2014-01-23 15:06:33"
         },
         {
             "name": "doctrine/annotations",
