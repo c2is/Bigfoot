@@ -33,7 +33,8 @@
         "doctrine/data-fixtures":               "dev-master",
         "jms/twig-js":                          "dev-master",
         "jms/twig-js-bundle":                   "dev-master",
-        "gedmo/doctrine-extensions":            "dev-master"
+        "gedmo/doctrine-extensions":            "dev-master",
+        "knplabs/knp-paginator-bundle": "~2.4"
     },
     "require-dev": {
         "atoum/atoum":                          "dev-master",

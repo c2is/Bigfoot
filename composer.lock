@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f62d49b353206ea2c7a565fa286323f9",
+    "hash": "c73033d194bbbd4413adaa7fb278cb25",
     "packages": [
         {
             "name": "bigfoot/content-bundle",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootContentBundle.git",
-                "reference": "be41ee06744c1823985ebd5d409825cc5227ccac"
+                "reference": "cd949a199b770dc76421c23040b9b69bdd5a4f7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootContentBundle/zipball/be41ee06744c1823985ebd5d409825cc5227ccac",
-                "reference": "be41ee06744c1823985ebd5d409825cc5227ccac",
+                "url": "https://api.github.com/repos/c2is/BigfootContentBundle/zipball/cd949a199b770dc76421c23040b9b69bdd5a4f7a",
+                "reference": "cd949a199b770dc76421c23040b9b69bdd5a4f7a",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
                 }
             ],
             "description": "Bigfoot Content bundle",
-            "time": "2014-01-23 09:32:55"
+            "time": "2014-01-23 15:52:14"
         },
         {
             "name": "bigfoot/context-bundle",
@@ -96,12 +96,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootCoreBundle.git",
-                "reference": "295c7016c1352a13c201511ec024cc9b00172ba1"
+                "reference": "43244143c5bfc82aa0cf746df8f2d1a9dfc34564"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/295c7016c1352a13c201511ec024cc9b00172ba1",
-                "reference": "295c7016c1352a13c201511ec024cc9b00172ba1",
+                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/43244143c5bfc82aa0cf746df8f2d1a9dfc34564",
+                "reference": "43244143c5bfc82aa0cf746df8f2d1a9dfc34564",
                 "shasum": ""
             },
             "require": {
@@ -130,7 +130,7 @@
                 }
             ],
             "description": "Bigfoot core bundle",
-            "time": "2014-01-22 11:32:12"
+            "time": "2014-01-23 16:17:30"
         },
         {
             "name": "bigfoot/import-bundle",
@@ -227,12 +227,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootNavigationBundle.git",
-                "reference": "8d7b478e944dd88183f235aa1c1231f78cfc18fb"
+                "reference": "b0d034a65217f79cad55fb50d9e9ae5ea718b63e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootNavigationBundle/zipball/8d7b478e944dd88183f235aa1c1231f78cfc18fb",
-                "reference": "8d7b478e944dd88183f235aa1c1231f78cfc18fb",
+                "url": "https://api.github.com/repos/c2is/BigfootNavigationBundle/zipball/b0d034a65217f79cad55fb50d9e9ae5ea718b63e",
+                "reference": "b0d034a65217f79cad55fb50d9e9ae5ea718b63e",
                 "shasum": ""
             },
             "require": {
@@ -260,7 +260,7 @@
                 }
             ],
             "description": "Bigfoot navigation bundle",
-            "time": "2014-01-22 08:40:12"
+            "time": "2014-01-23 16:02:00"
         },
         {
             "name": "bigfoot/seo-bundle",
@@ -1341,6 +1341,126 @@
                 "templating"
             ],
             "time": "2013-06-12 08:45:22"
+        },
+        {
+            "name": "knplabs/knp-components",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/knp-components.git",
+                "reference": "ec65f549d46e9a7b7f9872a3ed63db743e077dc0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/knp-components/zipball/ec65f549d46e9a7b7f9872a3ed63db743e077dc0",
+                "reference": "ec65f549d46e9a7b7f9872a3ed63db743e077dc0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "suggest": {
+                "doctrine/common": "to allow usage pagination with Doctrine ArrayCollection",
+                "doctrine/mongodb-odm": "to allow usage pagination with Doctrine ODM MongoDB",
+                "doctrine/orm": "to allow usage pagination with Doctrine ORM",
+                "propel/propel1": "to allow usage pagination with Propel ORM",
+                "ruflin/Elastica": "to allow usage pagination with ElasticSearch Client",
+                "solarium/solarium": "to allow usage pagination with Solarium Client"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Knp\\Component": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KnpLabs Team",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://github.com/KnpLabs/knp-components/contributors"
+                }
+            ],
+            "description": "Knplabs component library",
+            "homepage": "http://github.com/KnpLabs/knp-components",
+            "keywords": [
+                "components",
+                "knp",
+                "knplabs",
+                "pager",
+                "paginator"
+            ],
+            "time": "2014-01-21 11:19:41"
+        },
+        {
+            "name": "knplabs/knp-paginator-bundle",
+            "version": "dev-master",
+            "target-dir": "Knp/Bundle/PaginatorBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/KnpPaginatorBundle.git",
+                "reference": "0558122152ca6a7af71730f88b728a091dea490e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/KnpPaginatorBundle/zipball/0558122152ca6a7af71730f88b728a091dea490e",
+                "reference": "0558122152ca6a7af71730f88b728a091dea490e",
+                "shasum": ""
+            },
+            "require": {
+                "knplabs/knp-components": "~1.2",
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "~2.0",
+                "twig/twig": "~1.5"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Knp\\Bundle\\PaginatorBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KnpLabs Team",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony2 Community",
+                    "homepage": "http://github.com/KnpLabs/KnpPaginatorBundle/contributors"
+                }
+            ],
+            "description": "Paginator bundle for Symfony2 to automate pagination and simplify sorting and other features",
+            "homepage": "http://github.com/KnpLabs/KnpPaginatorBundle",
+            "keywords": [
+                "Symfony2",
+                "bundle",
+                "knp",
+                "knplabs",
+                "pager",
+                "pagination",
+                "paginator"
+            ],
+            "time": "2014-01-21 11:16:05"
         },
         {
             "name": "kriswallsmith/assetic",
