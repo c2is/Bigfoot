@@ -17,3 +17,7 @@ twig:
 framework:
     router:
         resource: "%kernel.root_dir%/config/routing_admin.yml"
+
+knp_menu:
+   twig:
+       template: BigfootCoreBundle:admin:menu.html.twig

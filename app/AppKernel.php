@@ -14,15 +14,19 @@ class AppKernel extends Kernel
             new Symfony\Bundle\MonologBundle\MonologBundle(),
             new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
+
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-            new Bigfoot\Bundle\ContextBundle\BigfootContextBundle(),
-            new Bigfoot\Bundle\SeoBundle\BigfootSeoBundle(),
-            new Bigfoot\Bundle\CoreBundle\BigfootCoreBundle(),
+
             new JMS\TwigJsBundle\JMSTwigJsBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new \Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new \Knp\Bundle\MenuBundle\KnpMenuBundle(),
+
+            new Bigfoot\Bundle\CoreBundle\BigfootCoreBundle(),
+            new Bigfoot\Bundle\ContextBundle\BigfootContextBundle(),
+            new Bigfoot\Bundle\SeoBundle\BigfootSeoBundle(),
             new Bigfoot\Bundle\NavigationBundle\BigfootNavigationBundle(),
             new Bigfoot\Bundle\MediaBundle\BigfootMediaBundle(),
             new Bigfoot\Bundle\ImportBundle\BigfootImportBundle(),
