@@ -62,27 +62,27 @@ bigfoot_content:
         page:
             title_desc:
                 class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\TitleDesc'
-                sub_templates: ['page_1']
+                sub_templates: ['title_desc_1']
             title_desc_sidebar:
                 class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\TitleDescSidebar'
-                sub_templates: ['page_1']
+                sub_templates: ['title_desc_sidebar_1', 'title_desc_sidebar_2']
             title_desc_img_sidebar:
                 class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\TitleDescImgSidebar'
-                sub_templates: ['page_1']
+                sub_templates: ['title_desc_img_sidebar_1']
         sidebar:
             title_block:
-                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\TitleBlock'
-                sub_templates: ['sidebar_1']
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Sidebar\TitleBlock'
+                sub_templates: ['title_block_1']
             title_desc_block:
-                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\TitleDescBlock'
-                sub_templates: ['sidebar_1']
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Sidebar\TitleDescBlock'
+                sub_templates: ['title_desc_block_1']
             title_desc_img_block:
-                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\TitleDescImgBlock'
-                sub_templates: ['sidebar_1']
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Sidebar\TitleDescImgBlock'
+                sub_templates: ['title_desc_img_block_1']
         block:
-            title_desc_image:
-                class: 'Bigfoot\Bundle\ContentBundle\Entity\Block\DescImage'
-                sub_templates: ['block_1', 'block_2', 'block_3']
+            title_desc_img:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Block\TitleDescImg'
+                sub_templates: ['title_desc_img_1', 'title_desc_img_2', 'title_desc_img_3']
 
 bigfoot_user:
     resetting:

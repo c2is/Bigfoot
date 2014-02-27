@@ -6,8 +6,8 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class SandboxContentBundle extends Bundle
 {
-    public function getParent()
-    {
-        return 'BigfootContentBundle';
-    }
+    // public function getParent()
+    // {
+    //     return 'BigfootContentBundle';
+    // }
 }

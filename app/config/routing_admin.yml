@@ -1,3 +1,8 @@
+bigfoot_content:
+    resource: "@BigfootContentBundle/Controller/"
+    type:     annotation
+    prefix:   /admin
+
 bigfoot_context:
     resource: "@BigfootContextBundle/Controller/"
     type:     annotation
@@ -30,11 +35,6 @@ bigfoot_import:
 
 bigfoot_navigation:
     resource: "@BigfootNavigationBundle/Controller/"
-    type:     annotation
-    prefix:   /admin
-
-bigfoot_content:
-    resource: "@BigfootContentBundle/Controller/"
     type:     annotation
     prefix:   /admin
 
