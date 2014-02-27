@@ -1,7 +1,7 @@
 bigfoot_context:
     resource: "@BigfootContextBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /admin
 
 bigfoot_media:
     resource: "@BigfootMediaBundle/Controller/"
@@ -16,17 +16,17 @@ bigfoot_core:
 bigfoot_user:
     resource: "@BigfootUserBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /admin
 
 bigfoot_seo:
     resource: "@BigfootSeoBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /admin
 
 bigfoot_import:
     resource: "@BigfootImportBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /admin
 
 bigfoot_navigation:
     resource: "@BigfootNavigationBundle/Controller/"

@@ -1,0 +1,93 @@
+bigfoot_core:
+    mailer:
+        from: bigfoot@c2is.fr
+    languages:
+        front:
+            fr:
+                label:  "French"
+                value:  "fr"
+                parameters:
+                    default_country:    "FR"
+                    fullLocale:         "fr_FR"
+            en:
+                label:  "English"
+                value:  "en"
+                parameters:
+                    default_country:    "GB"
+                    fullLocale:         "en_GB"
+            de:
+                label:  "German"
+                value:  "de"
+                parameters:
+                    default_country:    "DE"
+                    fullLocale:         "de_DE"
+            es:
+                label:  "Spanish"
+                value:  "es"
+                parameters:
+                    default_country:    "ES"
+                    fullLocale:         "es_ES"
+            it:
+                label:  "Italian"
+                value:  "it"
+                parameters:
+                    default_country:    "IT"
+                    fullLocale:         "it_IT"
+            nl:
+                label:  "Netherland"
+                value:  "nl"
+                parameters:
+                    default_country:    "NL"
+                    fullLocale:         "nl_NL"
+
+bigfoot_context:
+    entities:
+        - "Bigfoot\\"
+    contexts:
+        language:
+            loaders:
+                back: "bigfoot_language_loader"
+            values:
+                fr:
+                    label: "French"
+                    value: "fr"
+                en:
+                    label: "English"
+                    value: "en"
+            default_value: %locale%
+            label: "Language"
+
+bigfoot_content:
+    templates:
+        page:
+            title_desc:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\TitleDesc'
+                sub_templates: ['page_1']
+            title_desc_sidebar:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\TitleDescSidebar'
+                sub_templates: ['page_1']
+            title_desc_img_sidebar:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\TitleDescImgSidebar'
+                sub_templates: ['page_1']
+        sidebar:
+            title_block:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\TitleBlock'
+                sub_templates: ['sidebar_1']
+            title_desc_block:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\TitleDescBlock'
+                sub_templates: ['sidebar_1']
+            title_desc_img_block:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\TitleDescImgBlock'
+                sub_templates: ['sidebar_1']
+        block:
+            title_desc_image:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Block\DescImage'
+                sub_templates: ['block_1', 'block_2', 'block_3']
+
+bigfoot_user:
+    resetting:
+        token_ttl: 1800
+
+bigfoot_seo:
+    default:
+        meta_title: "My super duper website of d00m"

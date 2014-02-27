@@ -1,14 +1,15 @@
 imports:
-    - { resource: common.yml }
+    - { resource: config.yml }
     - { resource: menu_security.yml }
 
 assetic:
-    bundles: [ %bigfoot.theme.bundle% ]
+    write_to: %kernel.root_dir%/../web/
+    bundles: [ BigfootContentBundle, %bigfoot.theme.bundle% ]
 
 twig:
     form:
         resources:
-            - 'BigfootCoreBundle:form:form_custom_layout.html.twig'
+            - '%bigfoot.theme.bundle%:admin:form_custom_layout.html.twig'
     globals:
         bigfoot_theme_values: %bigfoot.theme.values%
         bigfoot_theme_bundle: %bigfoot.theme.bundle%
@@ -19,5 +20,9 @@ framework:
         resource: "%kernel.root_dir%/config/routing_admin.yml"
 
 knp_menu:
-   twig:
-       template: BigfootCoreBundle:admin:menu.html.twig
+    twig:
+        template: %bigfoot.theme.bundle%:admin:menu.html.twig
+
+knp_paginator:
+    template:
+        pagination: %bigfoot.theme.bundle%:admin:sliding.html.twig

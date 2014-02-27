@@ -23,17 +23,15 @@ security:
     providers:
         bigfoot:
             entity:
-                class: BigfootUserBundle:BigfootUser
+                class: BigfootUserBundle:User
     encoders:
-        Bigfoot\Bundle\UserBundle\Entity\BigfootUser:
+        Bigfoot\Bundle\UserBundle\Entity\User:
             algorithm:            pbkdf2
             hash_algorithm:       sha512
             encode_as_base64:     true
             iterations:           1000
-    acl:
-        connection: default
     access_control:
-        - { path: ^/admin/login,                         roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/admin/forgot-password,               roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/admin/reset-password,                roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/admin,                               roles: [IS_AUTHENTICATED_FULLY, IS_AUTHENTICATED_REMEMBERED] }
+        - { path: ^/admin/login,           roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/admin/forgot-password, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/admin/reset-password,  roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/admin,                 roles: [IS_AUTHENTICATED_FULLY, IS_AUTHENTICATED_REMEMBERED] }

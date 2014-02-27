@@ -1,0 +1,20 @@
+{% extends "knp_menu.html.twig" %}
+
+{% block linkElement -%}
+    {%- import "knp_menu.html.twig" as knp_menu -%}
+
+    {%- if item.linkAttributes.class is defined -%}
+        {% set classes = item.linkAttributes.class %}
+
+        {%- if matcher.isCurrent(item) -%}
+            {%- set classes = classes ~ ' ' ~ options.currentClass -%}
+        {%- endif -%}
+
+        {%- set linkAttributes = item.linkAttributes -%}
+        {%- set linkAttributes = linkAttributes|merge({'class': classes}) %}
+    {%- else -%}
+        {%- set linkAttributes = item.linkAttributes -%}
+    {%- endif -%}
+
+    <a href="{{ item.uri }}"{{ knp_menu.attributes(linkAttributes) }}>{{ block('label') }}</a>
+{%- endblock %}

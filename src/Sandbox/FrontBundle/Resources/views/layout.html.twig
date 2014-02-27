@@ -1,0 +1,18 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    {% block navbar %}
+        {% include "SandboxFrontBundle:Front:navbar.html.twig" %}
+    {% endblock %}
+
+    <div class="container pg-top-70" role="main">
+        <div class="row">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+
+    {% block footer %}
+        {% include "SandboxFrontBundle:Front:footer.html.twig" %}
+    {% endblock %}
+{% endblock %}

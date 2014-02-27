@@ -1,0 +1,27 @@
+sandbox_user:
+    resource: "@SandboxUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+sandbox_casting:
+    resource: "@SandboxCastingBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+sandbox_movie:
+    resource: "@SandboxMovieBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+sandbox_content:
+    resource: "@SandboxContentBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+sandbox_front:
+    resource: "@SandboxFrontBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"

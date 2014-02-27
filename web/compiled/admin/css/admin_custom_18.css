@@ -1,0 +1,74 @@
+/* Allows large popins */
+.large { width: 1000px }
+
+/* Fixes help buttons question mark displaying too low */
+.help-button {
+    line-height: 19px;
+}
+
+.ui-sortable-placeholder { border: 1px dotted black; visibility: visible !important; height: 28px !important; width: 481px; display:block;margin:10px auto;}
+.ui-sortable-placeholder * { visibility: hidden; }
+
+.portfolio-popin td.portfolio-action {
+    width: 45px;
+}
+
+.portfolio-media-edit > div {
+    max-height: 25px;
+}
+
+.nestable-list {
+    padding-top: 8px;
+}
+
+img.crud-column-media {
+    max-width: 300px;
+}
+
+.templates-type {
+    text-align: center;
+}
+
+.template-row input[type="radio"] {
+    display: none;
+}
+
+.template-row input[type="radio"]:checked + img {
+    border: 1px solid #438EB9;
+}
+
+.block-row input[type="radio"] {
+    display: none;
+}
+
+.block-row input[type="radio"]:checked + img {
+    border: 1px solid #438EB9;
+}
+
+.block-row input[type="radio"]+ img {
+    margin-right: 10px;
+}
+
+.sidebar-row input[type="radio"] {
+    display: none;
+}
+
+.sidebar-row input[type="radio"]:checked + img {
+    border: 2px solid #438EB9;
+}
+
+.sidebar-row input[type="radio"]+ img {
+    margin-right: 10px;
+}
+
+.widget-blocks {
+    list-style: none;
+}
+
+.widget-sidebars {
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}
