@@ -18500,7 +18500,7 @@ img.crud-column-media {
 }
 
 .sidebar-row input[type="radio"]:checked + img {
-    border: 2px solid #438EB9;
+    border: 1px solid #438EB9;
 }
 
 .sidebar-row input[type="radio"]+ img {
