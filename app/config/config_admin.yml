@@ -9,11 +9,10 @@ assetic:
 twig:
     form:
         resources:
-            - '%bigfoot.theme.bundle%:admin:form_custom_layout.html.twig'
+            - '%bigfoot.theme.bundle%:form_custom:inline.html.twig'
     globals:
-        bigfoot_theme_values: %bigfoot.theme.values%
-        bigfoot_theme_bundle: %bigfoot.theme.bundle%
-        theme: @bigfoot.theme
+        theme:         @bigfoot.theme
+        bigfoot_theme: %bigfoot_theme%
 
 framework:
     router:

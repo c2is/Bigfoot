@@ -25,6 +25,8 @@ class AppKernel extends Kernel
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new BeSimple\I18nRoutingBundle\BeSimpleI18nRoutingBundle(),
+            new Liip\ImagineBundle\LiipImagineBundle(),
+            new Elao\Bundle\FormTranslationBundle\ElaoFormTranslationBundle(),
 
             new Bigfoot\Bundle\CoreBundle\BigfootCoreBundle(),
             new Bigfoot\Bundle\ContextBundle\BigfootContextBundle(),
@@ -34,16 +36,11 @@ class AppKernel extends Kernel
             new Bigfoot\Bundle\ImportBundle\BigfootImportBundle(),
             new Bigfoot\Bundle\UserBundle\BigfootUserBundle(),
             new Bigfoot\Bundle\ContentBundle\BigfootContentBundle(),
-            new Bigfoot\Theme\AceThemeBundle\BigfootAceThemeBundle(),
-
-            new Sandbox\FrontBundle\SandboxFrontBundle(),
-            new Sandbox\ContentBundle\SandboxContentBundle(),
-            new Sandbox\MovieBundle\SandboxMovieBundle(),
-            new Sandbox\CastingBundle\SandboxCastingBundle(),
-            new Sandbox\UserBundle\SandboxUserBundle(),
+            new Bigfoot\Theme\DefaultThemeBundle\BigfootDefaultThemeBundle(),
         );
 
-        if (in_array($this->getEnvironment(), array('admin', 'admin_dev'))) { }
+        if (in_array($this->getEnvironment(), array('admin', 'admin_dev'))) {
+        }
 
         if (in_array($this->getEnvironment(), array('dev', 'test', 'admin_dev'))) {
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
@@ -60,7 +57,8 @@ class AppKernel extends Kernel
         $loader->load(__DIR__.'/config/config_'.$this->getEnvironment().'.yml');
     }
 
-    protected function initializeContainer() {
+    protected function initializeContainer()
+    {
         parent::initializeContainer();
         if (PHP_SAPI == 'cli') {
             $this->getContainer()->enterScope('request');

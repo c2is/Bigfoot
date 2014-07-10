@@ -1,6 +1,6 @@
 /web/bundles/
 /web/*/compiled/
-/web/admin/
+/web/admin/*
 /web/bigfoot/css/
 /web/bigfoot/js/
 /web/uploads/

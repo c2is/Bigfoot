@@ -19,6 +19,9 @@ security:
             pattern:    ^/admin
             anonymous:  ~
             form_login:
+                username_parameter:             "_username"
+                password_parameter:             "_password"
+                intention:                      authentication
                 provider:                       bigfoot
                 login_path:                     /admin/login
                 check_path:                     /admin/login_check

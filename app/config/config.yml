@@ -28,8 +28,10 @@ twig:
         resources:
             - 'form_div_layout.html.twig'
     globals:
-        locales:  %available_languages%
-        # seo:      @bigfoot_seo.helper
+        locales:              %available_languages%
+        bigfoot_theme:        %bigfoot_theme%
+        bigfoot_theme_bundle: %bigfoot.theme.bundle%
+        context:              @bigfoot_context
 
 # Assetic Configuration
 assetic:
@@ -99,27 +101,30 @@ doctrine:
                     BigfootMediaBundle: ~
                     BigfootNavigationBundle: ~
                     BigfootContentBundle: ~
-                    SandboxCastingBundle: ~
-                    SandboxContentBundle: ~
-                    SandboxFrontBundle: ~
-                    SandboxMovieBundle: ~
-                    SandboxUserBundle: ~
                 filters:
                     softdeleteable:
                         class: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
                         enabled: true
                 dql:
+                    string_functions:
+                        regexp: Bigfoot\Bundle\CoreBundle\ORM\Doctrine\Query\MySQL\Regexp
                     numeric_functions:
                         point_str: Bigfoot\Bundle\CoreBundle\ORM\PointStr
                         distance: Bigfoot\Bundle\CoreBundle\ORM\Distance
 
 # Swiftmailer Configuration
 swiftmailer:
-    transport: %mailer_transport%
-    host:      %mailer_host%
-    port:      %mailer_port%
-    username:  %mailer_user%
-    password:  %mailer_password%
+#     transport: %mailer_transport%
+#     host:      %mailer_host%
+#     port:      %mailer_port%
+#     username:  %mailer_user%
+#     password:  %mailer_password%
+    transport:  smtp
+    encryption: ssl
+    auth_mode:  login
+    host:       smtp.gmail.com
+    username:   yehya.latti@gmail.com
+    password:   xxxxxx
 
 stof_doctrine_extensions:
     default_locale: en
@@ -131,3 +136,17 @@ stof_doctrine_extensions:
             softdeleteable: true
             sortable:       true
             sluggable:      true
+
+elao_form_translation:
+    auto_generate: false
+
+    # Customize the ways keys are built
+    blocks:
+        # Prefix for prototype nodes
+        prototype:  "prototype"
+        # Prefix for children nodes
+        children:   "children"
+        # Prefix at the root of the key
+        root:       "form"
+        # Separator te be used between nodes
+        separator:  "."

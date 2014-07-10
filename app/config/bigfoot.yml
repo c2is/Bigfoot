@@ -1,93 +1,182 @@
+parameters:
+    bigfoot_theme:
+        title:    'Bigfoot'
+        subtitle: 'Site'
+
 bigfoot_core:
     mailer:
         from: bigfoot@c2is.fr
     languages:
         front:
             fr:
-                label:  "French"
-                value:  "fr"
+                label: 'French'
+                value: 'fr'
                 parameters:
-                    default_country:    "FR"
-                    fullLocale:         "fr_FR"
+                    default_country: 'FR'
+                    fullLocale:      'fr_FR'
             en:
-                label:  "English"
-                value:  "en"
+                label: 'English'
+                value: 'en'
                 parameters:
-                    default_country:    "GB"
-                    fullLocale:         "en_GB"
+                    default_country: 'GB'
+                    fullLocale:      'en_GB'
             de:
-                label:  "German"
-                value:  "de"
+                label: 'German'
+                value: 'de'
                 parameters:
-                    default_country:    "DE"
-                    fullLocale:         "de_DE"
+                    default_country: 'DE'
+                    fullLocale:      'de_DE'
             es:
-                label:  "Spanish"
-                value:  "es"
+                label: 'Spanish'
+                value: 'es'
                 parameters:
-                    default_country:    "ES"
-                    fullLocale:         "es_ES"
+                    default_country: 'ES'
+                    fullLocale:      'es_ES'
             it:
-                label:  "Italian"
-                value:  "it"
+                label: 'Italian'
+                value: 'it'
                 parameters:
-                    default_country:    "IT"
-                    fullLocale:         "it_IT"
+                    default_country: 'IT'
+                    fullLocale:      'it_IT'
             nl:
-                label:  "Netherland"
-                value:  "nl"
+                label: 'Netherland'
+                value: 'nl'
                 parameters:
-                    default_country:    "NL"
-                    fullLocale:         "nl_NL"
+                    default_country: 'NL'
+                    fullLocale:      'nl_NL'
 
 bigfoot_context:
-    entities:
-        - "Bigfoot\\"
     contexts:
         language:
-            loaders:
-                back: "bigfoot_language_loader"
-            values:
-                fr:
-                    label: "French"
-                    value: "fr"
-                en:
-                    label: "English"
-                    value: "en"
+            values: ~
             default_value: %locale%
-            label: "Language"
+            label: Language
+        distributor:
+            loaders:
+                front: sandbox_distributor.loader.distributor
+            values:
+                universal:
+                    label: Universal
+                    value: universal
+                gaumont:
+                    label: Gaumont
+                    value: gaumont
+            default_value: universal
+            label: Distributor
+    entities: ~
 
 bigfoot_content:
     templates:
         page:
             title_desc:
-                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\TitleDesc'
-                sub_templates: ['title_desc_1']
-            title_desc_sidebar:
-                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\TitleDescSidebar'
-                sub_templates: ['title_desc_sidebar_1', 'title_desc_sidebar_2']
-            title_desc_img_sidebar:
-                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\TitleDescImgSidebar'
-                sub_templates: ['title_desc_img_sidebar_1']
-        sidebar:
-            title_block:
-                class: 'Bigfoot\Bundle\ContentBundle\Entity\Sidebar\TitleBlock'
-                sub_templates: ['title_block_1']
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\Template\TitleDesc'
+                sub_templates:
+                    title_desc_1: 'Title + description'
+            title_desc_media:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\Template\TitleDescMedia'
+                sub_templates:
+                    title_desc_media_1: 'Title + description + media'
+                label: 'TEST'
             title_desc_block:
-                class: 'Bigfoot\Bundle\ContentBundle\Entity\Sidebar\TitleDescBlock'
-                sub_templates: ['title_desc_block_1']
-            title_desc_img_block:
-                class: 'Bigfoot\Bundle\ContentBundle\Entity\Sidebar\TitleDescImgBlock'
-                sub_templates: ['title_desc_img_block_1']
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\Template\TitleDescBlock'
+                sub_templates:
+                    title_desc_block_1: 'Title + description + blocks'
+                    title_desc_block_2: 'Title + description + blocks'
+            title_desc_media_block:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\Template\TitleDescMediaBlock'
+                sub_templates:
+                    title_desc_media_block_1: 'Title + description + media + blocks'
+                    title_desc_media_block_2: 'Title + description + media + blocks'
+            title_desc_media_block2:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\Template\TitleDescMediaBlock2'
+                sub_templates:
+                    title_desc_media_block2_1: 'Title + description + media + blocks'
+            title_desc_sidebar:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\Template\TitleDescSidebar'
+                sub_templates:
+                    title_desc_sidebar_1: 'Title + description + sidebar'
+            title_desc_media_sidebar:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\Template\TitleDescMediaSidebar'
+                sub_templates:
+                    title_desc_media_sidebar_1: 'Title + description + media + sidebar'
+            title_desc_block_sidebar:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\Template\TitleDescBlockSidebar'
+                sub_templates:
+                    title_desc_block_sidebar_1: 'Title + description + blocks + sidebar'
+            title_desc_media_block_sidebar:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\Template\TitleDescMediaBlockSidebar'
+                sub_templates:
+                    title_desc_media_block_sidebar_1: 'Title + description + media + blocks + sidebar'
+            title_desc2:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\Template\TitleDesc2'
+                sub_templates:
+                    title_desc2_1: 'Title + descriptions'
+            title_desc2_media:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\Template\TitleDesc2Media'
+                sub_templates:
+                    title_desc2_media_1: 'Title + descriptions + media'
+            title_desc2_block:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\Template\TitleDesc2Block'
+                sub_templates:
+                    title_desc2_block_1: 'Title + descriptions + blocks'
+                    title_desc2_block_2: 'Title + descriptions + blocks'
+                    title_desc2_block_3: 'Title + descriptions + blocks'
+            title_desc2_block2:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\Template\TitleDesc2Block2'
+                sub_templates:
+                    title_desc2_block2_1: 'Title + descriptions + blocks'
+            title_desc2_media_block:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\Template\TitleDesc2MediaBlock'
+                sub_templates:
+                    title_desc2_media_block_1: 'Title + descriptions + media + blocks'
+                    title_desc2_media_block_2: 'Title + descriptions + media + blocks'
+            title_desc2_media_block2:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Page\Template\TitleDesc2MediaBlock2'
+                sub_templates:
+                    title_desc2_media_block2_1: 'Title + descriptions + media + blocks'
+        sidebar:
+            block:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Sidebar\Template\Block'
+                sub_templates:
+                    block_1: 'Blocks'
+            title_block:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Sidebar\Template\TitleBlock'
+                sub_templates:
+                    title_block_1: 'Title + blocks'
+            media_block:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Sidebar\Template\MediaBlock'
+                sub_templates:
+                    media_block_1: 'Title + blocks'
+                    media_block_2: 'Title + blocks'
+            title_media_block:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Sidebar\Template\TitleMediaBlock'
+                sub_templates:
+                    title_media_block_1: 'Title + media + blocks'
+            title_desc_block:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Sidebar\Template\TitleDescBlock'
+                sub_templates:
+                    title_desc_block_1: 'Title + description + blocks'
+                    title_desc_block_2: 'Title + description + blocks'
+            title_desc_media_block:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Sidebar\Template\TitleDescMediaBlock'
+                sub_templates:
+                    title_desc_media_block_1: 'Title + description + media + blocks'
+                    title_desc_media_block_2: 'Title + description + media + blocks'
+                    title_desc_media_block_3: 'Title + description + media + blocks'
         block:
-            title_desc_img:
-                class: 'Bigfoot\Bundle\ContentBundle\Entity\Block\TitleDescImg'
-                sub_templates: ['title_desc_img_1', 'title_desc_img_2', 'title_desc_img_3']
+            title_desc_media:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Block\Template\TitleDescMedia'
+                sub_templates:
+                    title_desc_media_1: 'Title + description + media'
+                    title_desc_media_2: 'Title + description + media'
+                    title_desc_media_3: 'Title + description + media'
+                    title_desc_media_4: 'Title + description + media'
+                    title_desc_media_5: 'Title + description + media'
+            title2_desc2_media2:
+                class: 'Bigfoot\Bundle\ContentBundle\Entity\Block\Template\Title2Desc2Media2'
+                sub_templates:
+                    title2_desc2_media2_1: 'Titles + descriptions + medias'
 
 bigfoot_user:
     resetting:
         token_ttl: 1800
-
-bigfoot_seo:
-    default:
-        meta_title: "My super duper website of d00m"
