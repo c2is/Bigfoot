@@ -6,12 +6,6 @@
     "autoload": {
         "psr-0": { "": "src/" }
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@gitlab.c2is.fr:bigfoot/bigfootacetheme.git"
-        }
-    ],
     "minimum-stability": "dev",
     "require": {
         "php":                                  ">=5.3.3",
@@ -48,7 +42,6 @@
         "bigfoot/content-bundle":               "~2.2",
         "bigfoot/navigation-bundle":            "~2.2",
         "bigfoot/user-bundle":                  "~2.2",
-        "bigfoot/ace-theme":                    "~2.2",
         "bigfoot/default-theme":                "~2.2"
     },
     "require-dev": {
