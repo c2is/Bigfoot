@@ -1,10 +1,17 @@
 imports:
     - { resource: config.yml }
     - { resource: menu_security.yml }
+    - { resource: "@BigfootMediaBundle/Resources/config/config.yml" }
+    - { resource: "@BigfootCoreBundle/Resources/config/config.yml" }
+    - { resource: "@BigfootDefaultThemeBundle/Resources/config/assets.yml" }
+    - { resource: "@BigfootNavigationBundle/Resources/config/assets.yml" }
+    - { resource: "@BigfootCoreBundle/Resources/config/assets.yml" }
 
 assetic:
     write_to: %kernel.root_dir%/../web/
-    bundles: [ BigfootContentBundle, %bigfoot.theme.bundle% ]
+    bundles: ~
+    variables:
+        locale: ['en', 'fr']
 
 twig:
     form:
