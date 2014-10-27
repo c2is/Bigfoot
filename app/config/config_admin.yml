@@ -7,12 +7,6 @@ imports:
     - { resource: "@BigfootNavigationBundle/Resources/config/assets.yml" }
     - { resource: "@BigfootCoreBundle/Resources/config/assets.yml" }
 
-assetic:
-    write_to: %kernel.root_dir%/../web/
-    bundles: ~
-    variables:
-        locale: ['en', 'fr']
-
 twig:
     form:
         resources:
