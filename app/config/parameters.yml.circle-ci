@@ -1,0 +1,21 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: 172.17.42.1
+    database_port: 3309
+    database_name: bigfoot
+    database_user: root
+    database_password: ~
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_port: null
+    mailer_user: null
+    mailer_password: null
+    locale: en
+    secret: ThisTokenIsNotSoSecretChangeIt
+    bigfoot.theme.values: { logo: null, title: 'A sample site', subtitle: 'Bigfoot administration interface', provided_by: 'C2iS - Agence Digitale', copyright: 'Copyright © 2013' }
+    bigfoot.theme.bundle: BigfootDefaultThemeBundle
+    bigfoot.core.upload_dir: 'uploads/'
+    bigfoot.media.portfolio_dir: 'portfolio/'
+
+    available_languages: [ 'fr','en' ]

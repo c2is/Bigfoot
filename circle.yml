@@ -1,0 +1,20 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker info
+    - docker build -t debphp54 Docker/web/.
+    - docker build -t mysqldb Docker/mysql/.
+    - docker run -d -p 3309:3306 -e right="WRITE" -e user="root" -e password="" --name mysqldb mysqldb
+    - mv /home/ubuntu/Bigfoot/app/config/parameters.yml.circle-ci /home/ubuntu/Bigfoot/app/config/parameters.yml
+    - docker run --link mysqldb:mysqldb -v /home/ubuntu/Bigfoot:/srv debphp54 php /composer.phar install --prefer-dist
+
+test:
+  override:
+    - docker run --link mysqldb:mysqldb -v /home/ubuntu/Bigfoot:/srv debphp54 /buildapp.sh
+    - docker run -d -P --link mysqldb:mysqldb -v /home/ubuntu/Bigfoot:/srv --name web debphp54
+    - sleep 20
+    - curl localhost:49153/admin.php/admin/
+
