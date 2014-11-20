@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5080e206c092c88dbc3283fc184570ca",
+    "hash": "ff2afde09c432675b1ca9be1e64f7a7e",
     "packages": [
         {
             "name": "besimple/i18n-routing-bundle",
@@ -74,26 +74,26 @@
         },
         {
             "name": "bigfoot/content-bundle",
-            "version": "dev-master",
+            "version": "2.2.x-dev",
             "target-dir": "Bigfoot/Bundle/ContentBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootContentBundle.git",
-                "reference": "b2b0af628cdb1b0aa2e92edd322304ef854b4ab1"
+                "reference": "45a1bc3c78ecd0ae6627962194c3e93c137cf2d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootContentBundle/zipball/b2b0af628cdb1b0aa2e92edd322304ef854b4ab1",
-                "reference": "b2b0af628cdb1b0aa2e92edd322304ef854b4ab1",
+                "url": "https://api.github.com/repos/c2is/BigfootContentBundle/zipball/45a1bc3c78ecd0ae6627962194c3e93c137cf2d4",
+                "reference": "45a1bc3c78ecd0ae6627962194c3e93c137cf2d4",
                 "shasum": ""
             },
             "require": {
-                "bigfoot/core-bundle": "dev-master"
+                "bigfoot/core-bundle": "~2.2"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2.x-dev"
+                    "dev-2.2": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -120,30 +120,30 @@
                 }
             ],
             "description": "Bigfoot Content bundle",
-            "time": "2014-10-31 17:00:28"
+            "time": "2014-11-20 11:32:43"
         },
         {
             "name": "bigfoot/context-bundle",
-            "version": "dev-master",
+            "version": "2.2.x-dev",
             "target-dir": "Bigfoot/Bundle/ContextBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootContextBundle.git",
-                "reference": "04673ccc46e9ec6012be367b48d41fa2fc9f584c"
+                "reference": "45c13e2176009904d1cadf4ef2087eee6b39a9c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootContextBundle/zipball/04673ccc46e9ec6012be367b48d41fa2fc9f584c",
-                "reference": "04673ccc46e9ec6012be367b48d41fa2fc9f584c",
+                "url": "https://api.github.com/repos/c2is/BigfootContextBundle/zipball/45c13e2176009904d1cadf4ef2087eee6b39a9c2",
+                "reference": "45c13e2176009904d1cadf4ef2087eee6b39a9c2",
                 "shasum": ""
             },
             "require": {
-                "bigfoot/core-bundle": "dev-master"
+                "bigfoot/core-bundle": "~2.2"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2.x-dev"
+                    "dev-2.2": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -162,21 +162,21 @@
                 }
             ],
             "description": "Bigfoot context bundle",
-            "time": "2014-09-11 07:46:22"
+            "time": "2014-11-20 11:32:13"
         },
         {
             "name": "bigfoot/core-bundle",
-            "version": "dev-master",
+            "version": "2.2.x-dev",
             "target-dir": "Bigfoot/Bundle/CoreBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootCoreBundle.git",
-                "reference": "695ef05dc94cbe493846b7768032e43853a9e273"
+                "reference": "3356497d18764d775ca9bb5e3fbf5bbc8e0c160e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/695ef05dc94cbe493846b7768032e43853a9e273",
-                "reference": "695ef05dc94cbe493846b7768032e43853a9e273",
+                "url": "https://api.github.com/repos/c2is/BigfootCoreBundle/zipball/3356497d18764d775ca9bb5e3fbf5bbc8e0c160e",
+                "reference": "3356497d18764d775ca9bb5e3fbf5bbc8e0c160e",
                 "shasum": ""
             },
             "require": {
@@ -190,7 +190,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2.x-dev"
+                    "dev-2.2": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -209,30 +209,30 @@
                 }
             ],
             "description": "Bigfoot core bundle",
-            "time": "2014-11-14 16:12:09"
+            "time": "2014-11-20 10:33:39"
         },
         {
             "name": "bigfoot/default-theme",
-            "version": "dev-master",
+            "version": "2.2.x-dev",
             "target-dir": "Bigfoot/Theme/DefaultThemeBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootDefaultTheme.git",
-                "reference": "ec4084ec64d36af7862c8a9b6b243768f9fb5bc0"
+                "reference": "179fa1924d7b8ee48151de111f4209cbce2e497d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootDefaultTheme/zipball/ec4084ec64d36af7862c8a9b6b243768f9fb5bc0",
-                "reference": "ec4084ec64d36af7862c8a9b6b243768f9fb5bc0",
+                "url": "https://api.github.com/repos/c2is/BigfootDefaultTheme/zipball/179fa1924d7b8ee48151de111f4209cbce2e497d",
+                "reference": "179fa1924d7b8ee48151de111f4209cbce2e497d",
                 "shasum": ""
             },
             "require": {
-                "bigfoot/core-bundle": "dev-master"
+                "bigfoot/core-bundle": "~2.2"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2.x-dev"
+                    "dev-2.2": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -251,72 +251,30 @@
                 }
             ],
             "description": "Bigfoot Default Theme bundle",
-            "time": "2014-10-27 17:38:18"
-        },
-        {
-            "name": "bigfoot/ecircle-bundle",
-            "version": "dev-master",
-            "target-dir": "Bigfoot/Bundle/EcircleBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/c2is/BigfootEcircleBundle.git",
-                "reference": "6ba12dae7df9344ca734284d287d9b81f466759d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootEcircleBundle/zipball/6ba12dae7df9344ca734284d287d9b81f466759d",
-                "reference": "6ba12dae7df9344ca734284d287d9b81f466759d",
-                "shasum": ""
-            },
-            "require": {
-                "bigfoot/core-bundle": "dev-master"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Bigfoot\\Bundle\\EcircleBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "S.Huot",
-                    "email": "s.huot@c2is.fr"
-                }
-            ],
-            "description": "Bigfoot ecircle bundle",
-            "time": "2014-06-19 14:03:17"
+            "time": "2014-11-20 11:28:02"
         },
         {
             "name": "bigfoot/import-bundle",
-            "version": "dev-master",
+            "version": "2.2.x-dev",
             "target-dir": "Bigfoot/Bundle/ImportBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootImportBundle.git",
-                "reference": "157e1670c8c8ae926fb382528e2c4edc2ce6fa62"
+                "reference": "4a9954e5129a82c91978c5748eca9126263a75d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootImportBundle/zipball/157e1670c8c8ae926fb382528e2c4edc2ce6fa62",
-                "reference": "157e1670c8c8ae926fb382528e2c4edc2ce6fa62",
+                "url": "https://api.github.com/repos/c2is/BigfootImportBundle/zipball/4a9954e5129a82c91978c5748eca9126263a75d7",
+                "reference": "4a9954e5129a82c91978c5748eca9126263a75d7",
                 "shasum": ""
             },
             "require": {
-                "bigfoot/core-bundle": "dev-master"
+                "bigfoot/core-bundle": "~2.2"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2.x-dev"
+                    "dev-2.2": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -339,30 +297,30 @@
                 }
             ],
             "description": "Bigfoot import bundle",
-            "time": "2014-11-17 19:38:24"
+            "time": "2014-11-20 11:31:25"
         },
         {
             "name": "bigfoot/media-bundle",
-            "version": "dev-master",
+            "version": "2.2.x-dev",
             "target-dir": "Bigfoot/Bundle/MediaBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootMediaBundle.git",
-                "reference": "6b5c00240e00f9aef6037ff36c23f4e2b566beb3"
+                "reference": "50ae479d7a48f513959ea4dffcf9d2028a305fd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootMediaBundle/zipball/6b5c00240e00f9aef6037ff36c23f4e2b566beb3",
-                "reference": "6b5c00240e00f9aef6037ff36c23f4e2b566beb3",
+                "url": "https://api.github.com/repos/c2is/BigfootMediaBundle/zipball/50ae479d7a48f513959ea4dffcf9d2028a305fd9",
+                "reference": "50ae479d7a48f513959ea4dffcf9d2028a305fd9",
                 "shasum": ""
             },
             "require": {
-                "bigfoot/core-bundle": "dev-master"
+                "bigfoot/core-bundle": "~2.2"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2.x-dev"
+                    "dev-2.2": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -381,30 +339,30 @@
                 }
             ],
             "description": "Bigfoot media bundle",
-            "time": "2014-11-04 14:55:40"
+            "time": "2014-11-20 11:30:46"
         },
         {
             "name": "bigfoot/navigation-bundle",
-            "version": "dev-master",
+            "version": "2.2.x-dev",
             "target-dir": "Bigfoot/Bundle/NavigationBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootNavigationBundle.git",
-                "reference": "ebddf3b67a39559e61cfe56c4818e0f889669ea1"
+                "reference": "f282dcd20e1973c9373e63e04214455b5ba2e0ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootNavigationBundle/zipball/ebddf3b67a39559e61cfe56c4818e0f889669ea1",
-                "reference": "ebddf3b67a39559e61cfe56c4818e0f889669ea1",
+                "url": "https://api.github.com/repos/c2is/BigfootNavigationBundle/zipball/f282dcd20e1973c9373e63e04214455b5ba2e0ac",
+                "reference": "f282dcd20e1973c9373e63e04214455b5ba2e0ac",
                 "shasum": ""
             },
             "require": {
-                "bigfoot/core-bundle": "dev-master"
+                "bigfoot/core-bundle": "~2.2"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2.x-dev"
+                    "dev-2.2": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -423,30 +381,30 @@
                 }
             ],
             "description": "Bigfoot navigation bundle",
-            "time": "2014-10-27 08:48:25"
+            "time": "2014-11-20 11:29:58"
         },
         {
             "name": "bigfoot/seo-bundle",
-            "version": "dev-master",
+            "version": "2.2.x-dev",
             "target-dir": "Bigfoot/Bundle/SeoBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootSeoBundle.git",
-                "reference": "fbe200110c985fd4de8b67e4ddd059a6a876678e"
+                "reference": "feee2b94833e9bbf51acc4da5ec16cb1ee77864b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootSeoBundle/zipball/fbe200110c985fd4de8b67e4ddd059a6a876678e",
-                "reference": "fbe200110c985fd4de8b67e4ddd059a6a876678e",
+                "url": "https://api.github.com/repos/c2is/BigfootSeoBundle/zipball/feee2b94833e9bbf51acc4da5ec16cb1ee77864b",
+                "reference": "feee2b94833e9bbf51acc4da5ec16cb1ee77864b",
                 "shasum": ""
             },
             "require": {
-                "bigfoot/core-bundle": "dev-master"
+                "bigfoot/core-bundle": "~2.0"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2.x-dev"
+                    "dev-2.2": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -465,30 +423,30 @@
                 }
             ],
             "description": "Bigfoot seo bundle",
-            "time": "2014-10-04 15:18:25"
+            "time": "2014-11-20 11:29:27"
         },
         {
             "name": "bigfoot/user-bundle",
-            "version": "dev-master",
+            "version": "2.2.x-dev",
             "target-dir": "Bigfoot/Bundle/UserBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/c2is/BigfootUserBundle.git",
-                "reference": "fb580ed0e554e35c87113d98dd54d4a7b6132235"
+                "reference": "629834b859a3ea768bd07f87ea8fe63cbc2c8bd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c2is/BigfootUserBundle/zipball/fb580ed0e554e35c87113d98dd54d4a7b6132235",
-                "reference": "fb580ed0e554e35c87113d98dd54d4a7b6132235",
+                "url": "https://api.github.com/repos/c2is/BigfootUserBundle/zipball/629834b859a3ea768bd07f87ea8fe63cbc2c8bd9",
+                "reference": "629834b859a3ea768bd07f87ea8fe63cbc2c8bd9",
                 "shasum": ""
             },
             "require": {
-                "bigfoot/core-bundle": "dev-master"
+                "bigfoot/core-bundle": "~2.2"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2.x-dev"
+                    "dev-2.2": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -507,7 +465,7 @@
                 }
             ],
             "description": "Bigfoot user bundle",
-            "time": "2014-09-08 12:51:40"
+            "time": "2014-11-20 11:28:50"
         },
         {
             "name": "camcima/camcima-soap-client",

@@ -37,7 +37,6 @@
         "bigfoot/import-bundle":                "~2.2",
         "bigfoot/media-bundle":                 "~2.2",
         "bigfoot/context-bundle":               "~2.2",
-        "bigfoot/ecircle-bundle":               "~2.2",
         "bigfoot/core-bundle":                  "~2.2",
         "bigfoot/content-bundle":               "~2.2",
         "bigfoot/navigation-bundle":            "~2.2",
@@ -82,8 +81,7 @@
             "file": "app/config/parameters.yml"
         },
         "branch-alias": {
-            "dev-master": "2.2-dev"
+            "dev-2.2": "2.2-dev"
         }
-
     }
 }
