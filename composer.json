@@ -33,16 +33,15 @@
         "stof/doctrine-extensions-bundle":      "~1.0",
         "besimple/i18n-routing-bundle":         "~2.0",
         "elao/form-translation-bundle":         "1.0.*",
-        "bigfoot/seo-bundle":                   "~2.2",
-        "bigfoot/import-bundle":                "~2.2",
-        "bigfoot/media-bundle":                 "~2.2",
-        "bigfoot/context-bundle":               "~2.2",
-        "bigfoot/ecircle-bundle":               "~2.2",
-        "bigfoot/core-bundle":                  "~2.2",
-        "bigfoot/content-bundle":               "~2.2",
-        "bigfoot/navigation-bundle":            "~2.2",
-        "bigfoot/user-bundle":                  "~2.2",
-        "bigfoot/default-theme":                "~2.2"
+        "bigfoot/seo-bundle":                   "~3.0",
+        "bigfoot/import-bundle":                "~3.0",
+        "bigfoot/media-bundle":                 "~3.0",
+        "bigfoot/context-bundle":               "~3.0",
+        "bigfoot/core-bundle":                  "~3.0",
+        "bigfoot/content-bundle":               "~3.0",
+        "bigfoot/navigation-bundle":            "~3.0",
+        "bigfoot/user-bundle":                  "~3.0",
+        "bigfoot/default-theme":                "~3.0"
     },
     "require-dev": {
         "atoum/atoum":                              "dev-master",
@@ -82,7 +81,7 @@
             "file": "app/config/parameters.yml"
         },
         "branch-alias": {
-            "dev-master": "2.2-dev"
+            "dev-master": "2.3-dev"
         }
 
     }
