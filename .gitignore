@@ -1,9 +1,10 @@
+/web/*/compiled
+/web/assetic/
 /web/bundles/
-/web/*/compiled/
-/web/admin/*
-/web/bigfoot/css/
-/web/bigfoot/js/
 /web/uploads/
+/web/media/
+/web/css/bigfoot*.css
+/web/js/bigfoot*.js
 /app/bootstrap.php.cache
 /app/cache/*
 /app/config/parameters.yml
@@ -13,4 +14,9 @@
 /bin/
 /composer.phar
 .idea
-/web/compiled/*
+.DS_Store
+*/.DS_Store
+
+# Grunt
+/node_modules/
+npm-*.log
