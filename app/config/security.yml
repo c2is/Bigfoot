@@ -1,1 +1,2 @@
-security:
+imports:
+    - { resource: security_admin.yml }
