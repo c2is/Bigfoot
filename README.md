@@ -1,4 +1,4 @@
-Bigfoot ![Build Status](http://phpci.c2is.fr/assets/img/bigfoot.png)
+Bigfoot ![Build Status](https://circleci.com/gh/c2is/Bigfoot/tree/master.png?circle-token=61d6f6e7bde0901f2923a458cc91e97cf0520e7c)
 =======
 
 The Bigfoot administration interface.
