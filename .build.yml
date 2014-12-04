@@ -7,7 +7,8 @@ script:
 #  - setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/cache/
 #  - setfacl -R -m u:www-data:rwx -m u:`whoami`:rwx app/logs/
 #  - setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/logs/
-  - app/console -n bigfoot:theme:install --symlink;
+  - app/console assets:install --symlink;
   - app/console assetic:dump --env=prod
   - app/console assetic:dump --env=admin
+  - app/console assetic:dump bigfoot:labels:sync
   - chmod -R 777 app/cache app/logs web/uploads
