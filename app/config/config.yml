@@ -106,11 +106,17 @@ doctrine:
                         class: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
                         enabled: true
                 dql:
-                    string_functions:
-                        regexp: Bigfoot\Bundle\CoreBundle\ORM\Doctrine\Query\MySQL\Regexp
                     numeric_functions:
+                        acos:      Bigfoot\Bundle\CoreBundle\ORM\Acos
+                        cos:       Bigfoot\Bundle\CoreBundle\ORM\Cos
+                        sin:       Bigfoot\Bundle\CoreBundle\ORM\Sin
+                        radians:   Bigfoot\Bundle\CoreBundle\ORM\Radians
                         point_str: Bigfoot\Bundle\CoreBundle\ORM\PointStr
-                        distance: Bigfoot\Bundle\CoreBundle\ORM\Distance
+                        distance:  Bigfoot\Bundle\CoreBundle\ORM\Distance
+                    string_functions:
+                        regexp:          Bigfoot\Bundle\CoreBundle\ORM\Doctrine\Query\MySQL\Regexp
+                        substring_index: Bigfoot\Bundle\CoreBundle\ORM\Doctrine\Query\MySQL\SubstringIndex
+                        greatest:        Bigfoot\Bundle\CoreBundle\ORM\Doctrine\Query\MySQL\Greatest
 
 # Swiftmailer Configuration
 swiftmailer:
