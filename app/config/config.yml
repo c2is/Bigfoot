@@ -61,62 +61,10 @@ doctrine:
         # path:     %database_path%
 
     orm:
-        default_entity_manager: bigfoot
         auto_generate_proxy_classes: %kernel.debug%
-        entity_managers:
-            bigfoot:
-                connection: default
-                auto_mapping: false
-                naming_strategy: doctrine.orm.naming_strategy.underscore
-                mappings:
-                    gedmo_translatable:
-                        type: annotation
-                        prefix: Gedmo\Translatable\Entity
-                        dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity"
-                        alias: GedmoTranslatable # this one is optional and will default to the name set for the mapping
-                        is_bundle: false
-                    gedmo_translator:
-                        type: annotation
-                        prefix: Gedmo\Translator\Entity
-                        dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity"
-                        alias: GedmoTranslator # this one is optional and will default to the name set for the mapping
-                        is_bundle: false
-                    gedmo_loggable:
-                        type: annotation
-                        prefix: Gedmo\Loggable\Entity
-                        dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity"
-                        alias: GedmoLoggable # this one is optional and will default to the name set for the mapping
-                        is_bundle: false
-                    gedmo_tree:
-                        type: annotation
-                        prefix: Gedmo\Tree\Entity
-                        dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity"
-                        alias: GedmoTree # this one is optional and will default to the name set for the mapping
-                        is_bundle: false
-                    BigfootContextBundle: ~
-                    BigfootCoreBundle: ~
-                    BigfootUserBundle: ~
-                    BigfootSeoBundle: ~
-                    BigfootImportBundle: ~
-                    BigfootMediaBundle: ~
-                    BigfootNavigationBundle: ~
-                    BigfootContentBundle: ~
-                filters:
-                    softdeleteable:
-                        class: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
-                        enabled: true
-                dql:
-                    numeric_functions:
-                        acos:      Bigfoot\Bundle\CoreBundle\ORM\Acos
-                        cos:       Bigfoot\Bundle\CoreBundle\ORM\Cos
-                        sin:       Bigfoot\Bundle\CoreBundle\ORM\Sin
-                        radians:   Bigfoot\Bundle\CoreBundle\ORM\Radians
-                        point_str: Bigfoot\Bundle\CoreBundle\ORM\PointStr
-                        distance:  Bigfoot\Bundle\CoreBundle\ORM\Distance
-                    string_functions:
-                        regexp:          Bigfoot\Bundle\CoreBundle\ORM\Doctrine\Query\MySQL\Regexp
-                        substring_index: Bigfoot\Bundle\CoreBundle\ORM\Doctrine\Query\MySQL\SubstringIndex
-                        greatest:        Bigfoot\Bundle\CoreBundle\ORM\Doctrine\Query\MySQL\Greatest
+        connection: default
+        auto_mapping: true
+        naming_strategy: doctrine.orm.naming_strategy.underscore
 
 # Swiftmailer Configuration
 swiftmailer:

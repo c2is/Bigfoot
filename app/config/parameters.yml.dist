@@ -19,5 +19,6 @@ parameters:
     bigfoot.theme.bundle: BigfootDefaultThemeBundle
     bigfoot.core.upload_dir: 'uploads/'
     bigfoot.media.portfolio_dir: 'portfolio/'
+    bigfoot.secure: false
 
     available_languages: [ 'fr','en' ]
