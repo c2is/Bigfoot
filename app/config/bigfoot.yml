@@ -4,6 +4,7 @@ parameters:
         subtitle: 'Site'
 
 bigfoot_core:
+    secure: %bigfoot.secure%
     mailer:
         from: bigfoot@c2is.fr
     languages:

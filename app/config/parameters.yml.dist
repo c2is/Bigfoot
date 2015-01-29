@@ -15,9 +15,10 @@ parameters:
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
 
-    bigfoot.theme.values: { logo: null, title: 'A sample site', subtitle: 'Bigfoot administration interface', provided_by: 'C2iS - Agence Digitale', copyright: 'Copyright © 2013' }
-    bigfoot.theme.bundle: BigfootDefaultThemeBundle
-    bigfoot.core.upload_dir: 'uploads/'
+    bigfoot.theme.values:        { logo: null, title: 'A sample site', subtitle: 'Bigfoot administration interface', provided_by: 'C2iS - Agence Digitale', copyright: 'Copyright © 2013' }
+    bigfoot.theme.bundle:        BigfootDefaultThemeBundle
+    bigfoot.core.upload_dir:     'uploads/'
     bigfoot.media.portfolio_dir: 'portfolio/'
+    bigfoot.secure:              false
 
-    available_languages: [ 'fr','en' ]
+    available_languages: [ 'fr', 'en' ]
